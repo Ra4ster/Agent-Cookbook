@@ -64,6 +64,7 @@
     - [Starter llms.txt Template](#starter-llmstxt-template)
     - [Starter SECURITY.md Template](#starter-securitymd-template)
 - [Thank You & Getting Involved](#-thank-you--getting-involved)
+- [Related](#related)
 
 ---
 
@@ -3001,8 +3002,6 @@ _Thank you for helping keep the agent ecosystem safe and secure._
 
 ---
 
----
-
 ## 🌟 Thank You & Getting Involved
 
 Thank you for exploring the **Agent Cookbook**! The AI agent and vibecoding ecosystem is evolving at lightning speed, and this repository relies on developers like you to keep it fresh, accurate, and highly curated.
@@ -3012,3 +3011,11 @@ If you found these templates and ecosystem maps helpful, please consider **starr
 - **Have a tool to add?** We would love to see it. Read our [Contributing Guidelines](CONTRIBUTING.md) to see how to format your submission.
 - **Spotted a broken link?** Let us know by [opening an issue](https://www.google.com/search?q=https://github.com/Ra4ster/Agent-Cookbook/issues) or submitting a quick PR.
 - **Found a security concern?** Please review our [Security Policy](SECURITY.md) for responsible disclosure.
+
+## Related
+
+If you found this repository helpful, check out these related lists:
+
+- [Awesome OpenAI](https://github.com/alifirooz/awesome-openai) - A curated list of awesome OpenAI API resources, libraries, and tools.
+- [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) - A repository that includes ChatGPT prompt curation to use ChatGPT better.
+- [Awesome](https://github.com/sindresorhus/awesome) - The overarching curated list of awesome lists.
