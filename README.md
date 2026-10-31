@@ -34,6 +34,19 @@ This repo is a collection of useful tools for people needing templates, plugins,
     - [Gemini CLI Developer Extensions & MCP](#gemini-cli-developer-extensions--mcp)
     - [Code Assist & GitHub Workflow Extensions](#code-assist--github-workflow-extensions)
     - [Cloud, BigQuery & Data Intelligence](#cloud-bigquery--data-intelligence)
+- [AGENTS.md](#agentsmd)
+- [Tooling Suggestions](#tooling-suggestions)
+  - [Vibe Coding IDEs & App Builders](#vibe-coding-ides--app-builders)
+    - [AI-Native IDEs & Agentic Workspaces](#ai-native-ides--agentic-workspaces)
+    - [Autonomous Software Engineers & Cloud Agents](#autonomous-software-engineers--cloud-agents)
+    - [Prompt-to-App & Full-Stack Prototyping Platforms](#prompt-to-app--full-stack-prototyping-platforms)
+    - [Terminal Coding Agents & CLI Workflows](#terminal-coding-agents--cli-workflows)
+    - [Enterprise Code Intelligence & Code Graph Assistants](#enterprise-code-intelligence--code-graph-assistants)
+  - [Model Context Protocol (MCP) Servers](#model-context-protocol-mcp-servers)
+
+---
+
+<br/><br/><br/>
 
 # Plugins per Model
 
@@ -1789,3 +1802,370 @@ Consider copying this file into your own codebase as `AGENTS.md`. It is general-
 
 > **To Agent**: If this `AGENTS.md` file is _not_ filled in yet, consider filling it in yourself as you analyze the codebase.
 ```
+
+# Tooling Suggestions
+
+> This is a list of tools you should consider using, organized by type of tool (IDE, code review, et cetera).
+
+## Vibe Coding IDEs & App Builders
+
+### AI-Native IDEs & Agentic Workspaces
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Google Antigravity](https://antigravity.google/)
+
+Google's advanced agentic coding platform and AI IDE built for deep pair programming and autonomous task execution. Powered by Gemini reasoning models, Antigravity features parallel subagent swarms, asynchronous background execution, interactive rich markdown artifacts, generative UI widgets, Model Context Protocol (MCP) tool integration, extensible skills/rules architectures, and the official `agy` CLI for seamless terminal-to-IDE workflows.
+
+**Key Capabilities:**
+Multi-agent orchestration, interactive artifacts, subagent delegation, background task management, and native `agy` CLI integration.
+
+</td>
+<td width="50%" valign="top">
+
+### [Cursor](https://cursor.com/)
+
+Cursor combines AI-first development, intelligent automation, and enterprise scalability to enhance coding efficiency. Its unique combination of multi-model support (Claude 3.5 Sonnet, GPT-4o), parallel agent workflows via Composer, semantic codebase indexing, and shadow workspace linting makes it a transformative tool for individual developers and teams.
+
+**Key Capabilities:**
+Composer multi-file editing, custom `.cursorrules` prompt guidance, semantic symbol indexing, and instant shadow linting.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Windsurf](https://windsurf.com/)
+
+Codeium's next-generation AI IDE built around the Cascade collaborative agent. Features real-time deep codebase awareness, predictive edits via Supercomplete, multi-file refactoring, and enterprise-grade security, making it a strong choice for teams and large codebases.
+
+**Key Capabilities:**
+Cascade collaborative agent, real-time multi-repo indexing, predictive next-action flow, and VS Code extension compatibility.
+
+</td>
+<td width="50%" valign="top">
+
+### [Trae](https://www.trae.ai/)
+
+An adaptive, AI-native IDE built on VS Code with the Claude 3.5 Sonnet and GPT-4o powered 'Builder' multi-agent mode. Features workspace-wide contextual indexing, multimodal chat, and automated terminal execution for rapid full-stack prototyping.
+
+**Key Capabilities:**
+Builder multi-agent mode, multimodal workspace chat, project-wide symbol indexing, and free tier model access.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Zed](https://zed.dev/)
+
+An ultra-fast, GPU-accelerated code editor written in Rust with built-in multi-model AI assistant workflows. Features inline prompt transformations, model switching (Claude, OpenAI, Ollama), native Model Context Protocol (MCP) support, and real-time multiplayer pair programming.
+
+**Key Capabilities:**
+Sub-millisecond latency, GPU rendering, native MCP support, inline transformations, and collaborative multiplayer editing.
+
+</td>
+<td width="50%" valign="top">
+
+### [Void](https://voideditor.com/)
+
+An open-source, privacy-first Cursor alternative that gives developers full control over their code and telemetry. Connects directly to local models (Ollama, vLLM) or private API keys with support for multi-file editing, chat, and custom agent tools.
+
+**Key Capabilities:**
+Zero telemetry, local model execution (Ollama/vLLM), private API keys, and open-source customizable architecture.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [PearAI](https://trypear.ai/)
+
+An open-source AI code editor (backed by Y Combinator) designed as a community-driven, transparent alternative to proprietary AI IDEs. Integrates vetted open-source AI extensions, conversational chat, inline refactoring, and multi-model support into a unified distribution.
+
+**Key Capabilities:**
+Curated open-source agent integration, transparent ecosystem, multi-model flexibility, and community-driven development.
+
+</td>
+<td width="50%" valign="top">
+
+### [Melty](https://melty.dev/)
+
+The first open-source AI code editor that observes your programming workflow from compiler output to terminal commands and git commits, anticipating your next steps and generating clean, context-aware commit messages and diffs.
+
+**Key Capabilities:**
+Compiler-aware feedback loops, automated semantic commit drafting, state-of-flow tracking, and self-hosted privacy.
+
+</td>
+</tr>
+</table>
+
+### Autonomous Software Engineers & Cloud Agents
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Devin](https://devin.ai/)
+
+The first autonomous AI software engineer by Cognition Labs. Operates inside a secure, sandboxed cloud environment with a full browser, terminal, code editor, and planner, enabling it to build complex features, debug code, and resolve GitHub issues end-to-end.
+
+**Key Capabilities:**
+End-to-end autonomous task execution, sandboxed browser/terminal environment, SWE-bench performance, and automated PR submission.
+
+</td>
+<td width="50%" valign="top">
+
+### [OpenHands](https://all-hands.dev/)
+
+The premier open-source autonomous AI software developer platform (formerly OpenDevin) with community-leading SWE-bench scores. Operates within an isolated Docker sandbox with access to a terminal, web browser, and file editor to resolve GitHub issues and build software packages.
+
+**Key Capabilities:**
+Open-source autonomous runtime, Docker sandboxing, extensible agent architectures, and community-driven benchmark leadership.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Replit Agent](https://replit.com/)
+
+An autonomous cloud software builder that takes high-level project descriptions and manages the entire development lifecycle: setting up PostgreSQL databases, installing dependencies, writing backend and frontend logic, and deploying live production applications with zero local configuration.
+
+**Key Capabilities:**
+Zero-config cloud deployments, automatic database provisioning, live app hosting, and autonomous multi-file scaffolding.
+
+</td>
+<td width="50%" valign="top">
+
+### [GitHub Copilot Workspace](https://github.com/features/copilot)
+
+A task-centric development environment that bridges GitHub Issues and Pull Requests. Synthesizes a specification, devises a multi-step plan, edits files across the repository, and submits refined pull requests directly from GitHub.
+
+**Key Capabilities:**
+Issue-to-PR automated workflow, multi-file specification planning, native GitHub integration, and team collaboration.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Goose](https://block.github.io/goose/)
+
+An open-source, autonomous AI developer agent created by Block. Runs locally on your machine, interacts directly through the terminal to execute shell commands, navigates project directories, and connects to external services and developer tools via MCP.
+
+**Key Capabilities:**
+Local CLI execution, autonomous tool calling, extensible Model Context Protocol (MCP) integrations, and enterprise open-source backing.
+
+</td>
+<td width="50%" valign="top">
+
+### [Pythagora (GPT Pilot)](https://github.com/Pythagora-io/gpt-pilot)
+
+A step-by-step autonomous software development agent that builds production applications from the ground up. Interviews the developer about architecture requirements, scaffolds files, runs tests, inspects runtime logs, and debugs errors collaboratively.
+
+**Key Capabilities:**
+Interactive developer onboarding, step-by-step verified code synthesis, runtime log debugging, and full-stack scaffolding.
+
+</td>
+</tr>
+</table>
+
+### Prompt-to-App & Full-Stack Prototyping Platforms
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Lovable](https://lovable.dev/)
+
+An AI-powered full-stack development platform that acts like an IDE where you build web applications by describing them in natural language. It generates production-ready frontend, backend, Supabase database schemas, and external API integrations with instant visual previews.
+
+**Key Capabilities:**
+Rapid conversational app building, Supabase backend integration, GitHub bidirectional synchronization, and live web preview.
+
+</td>
+<td width="50%" valign="top">
+
+### [Bolt.new](https://bolt.new/)
+
+StackBlitz's in-browser full-stack development environment powered by WebContainers. Turns natural-language prompts into running full-stack applications directly in the browser, complete with Node.js package execution, live reload, instant hosting, and database connectivity.
+
+**Key Capabilities:**
+In-browser WebContainer execution, zero-install npm package support, instant hosting, and rapid prototype sharing.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [v0 by Vercel](https://v0.dev/)
+
+Vercel's generative UI and full-stack web application builder. Crafts production-ready React, Next.js, and Tailwind CSS interfaces from natural language or Figma designs, featuring real-time visual iteration, component-level prompting, and one-click Vercel deployments.
+
+**Key Capabilities:**
+Generative React/Tailwind UI, Figma-to-code import, component-level prompt iteration, and 1-click Vercel deployments.
+
+</td>
+<td width="50%" valign="top">
+
+### [Marblism](https://marblism.com/)
+
+A specialized prompt-to-app platform designed for building SaaS products. Generates complete, deployable codebases featuring Next.js, Prisma ORM, PostgreSQL, Stripe payments, authentication, and Tailwind UI from natural-language specifications.
+
+**Key Capabilities:**
+Production-ready SaaS scaffolding, pre-configured Stripe monetization, Prisma ORM database models, and authentication.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Tempo Labs](https://tempolabs.ai/)
+
+A generative visual React workspace that lets developers build, style, and edit production React and Tailwind CSS components either visually or through natural-language prompts, with instant bidirectional synchronization to GitHub repositories.
+
+**Key Capabilities:**
+Bidirectional visual canvas and code sync, production React/Tailwind output, component design system alignment, and GitHub sync.
+
+</td>
+<td width="50%" valign="top">
+
+### [Create.xyz](https://www.create.xyz/)
+
+A prompt-driven visual app development platform that converts natural language into live, full-stack React components, tools, and web apps with integrated backend state, databases, and serverless functions.
+
+**Key Capabilities:**
+Instant functional prototyping, built-in serverless backends, universal component generation, and rapid embed capabilities.
+
+</td>
+</tr>
+</table>
+
+### Terminal Coding Agents & CLI Workflows
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
+
+Anthropic's official agentic terminal interface that navigates entire codebases, runs commands, executes test suites, diagnoses errors, and commits git changes autonomously with deep reasoning powered by Claude 3.7 Sonnet.
+
+**Key Capabilities:**
+Codebase-wide semantic search, autonomous test-driven repair loops, terminal command execution, and git workflow integration.
+
+</td>
+<td width="50%" valign="top">
+
+### [Aider](https://aider.chat/)
+
+The leading terminal-based AI pair programming tool. Automatically constructs a tree-sitter AST map of your entire git repository to understand symbol relationships, edits code across multiple files, and crafts clean, conventional git commit messages with diffs.
+
+**Key Capabilities:**
+Tree-sitter repository map AST indexing, multi-model support, voice prompt input, and automated git commit generation.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Cline](https://cline.bot/ide)
+
+The original surface for the Cline agent: an open-source chat sidebar for VS Code that reads files, executes terminal commands, edits code, interacts with browser sessions, and requires explicit user approvals before applying changes.
+
+**Key Capabilities:**
+Human-in-the-loop tool approvals, browser testing integration, MCP tool support, and multi-file code editing.
+
+</td>
+<td width="50%" valign="top">
+
+### [Roo Code](https://roocode.com/)
+
+An advanced autonomous AI coding assistant extension for VS Code (fork of Cline) featuring customizable agent modes (Architect, Code, Ask, Debugger), fine-grained token usage tracking, Model Context Protocol (MCP) tool support, and interactive diff approvals.
+
+**Key Capabilities:**
+Specialized agent role personas (Architect/Coder/Debugger), token cost analytics, MCP server integration, and custom rules.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Continue](https://continue.dev/)
+
+The leading open-source AI code assistant extension for VS Code and JetBrains IDEs. Offers modular connectivity to any local (Ollama, LM Studio) or cloud model, custom `@` context providers (codebase, git diffs, docs), slash commands, and native Model Context Protocol (MCP) tools.
+
+**Key Capabilities:**
+Modular model backend (local & cloud), `@` context providers, slash commands, custom system prompts, and native MCP support.
+
+</td>
+<td width="50%" valign="top">
+
+### [Plandex](https://plandex.ai/)
+
+An open-source, terminal-based AI engine built specifically for large, complex multi-file engineering tasks. Uses git branch sandboxing, persistent conversation graphs, and structured plan-review workflows that let developers inspect and approve diffs before committing them.
+
+**Key Capabilities:**
+Isolated git branch sandboxing, long-running persistent task context, multi-file diff inspection, and plan-first execution.
+
+</td>
+</tr>
+</table>
+
+### Enterprise Code Intelligence & Code Graph Assistants
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Sourcegraph Cody](https://sourcegraph.com/cody)
+
+An enterprise-grade AI coding assistant powered by Sourcegraph's comprehensive code graph and multi-repo semantic search, enabling accurate codebase-wide context retrieval, multi-file code generation, and automated documentation.
+
+**Key Capabilities:**
+Enterprise multi-repo code graph search, precise context retrieval, SOC 2 compliance, and guardrails against hallucinations.
+
+</td>
+<td width="50%" valign="top">
+
+### [Amazon Q Developer](https://aws.amazon.com/q/developer/)
+
+AWS's generative AI coding companion designed for software development, cloud infrastructure, and enterprise legacy modernization. Features autonomous feature development agents, security vulnerability scanning, automated Java version upgrades, and AWS service diagnostics.
+
+**Key Capabilities:**
+Autonomous software development agents, automated legacy Java migrations, AWS resource diagnostics, and security remediation.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Tabnine](https://www.tabnine.com/)
+
+An enterprise-focused, privacy-first AI code assistant that guarantees zero code retention and offers full on-premises or VPC deployments, trained strictly on permissively licensed open-source code or your organization's private codebase.
+
+**Key Capabilities:**
+Zero data retention guarantee, air-gapped on-premise deployment, proprietary codebase fine-tuning, and IP indemnification.
+
+</td>
+<td width="50%" valign="top">
+
+### [Potpie](https://potpie.ai/)
+
+An open-source platform for creating codebase-specific AI agents that understand complex software architectures for automated debugging, integration testing, system design analysis, and code review.
+
+**Key Capabilities:**
+Codebase knowledge graphs, custom agent creation, automated regression testing, and architectural verification.
+
+</td>
+</tr>
+</table>
+
+## Model Context Protocol (MCP) Servers
+
+- [**GitHub MCP**](https://github.com/mcp): The official server enabling agents to triage issues, draft pull requests, and monitor CI workflows directly.
+- [**Filesystem MCP**](https://mcpservers.org/servers/modelcontextprotocol/filesystem): The standard protocol server that provides agents with strictly scoped, secure read/write access to local project directories.
+- [**Playwright MCP**](https://playwright.dev/): Allows agents to drive real browsers through structured accessibility snapshots for automated UI verification.
