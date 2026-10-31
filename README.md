@@ -1,6 +1,10 @@
 # Agent Cookbook
 
-This repo is a collection of useful tools for people needing templates, plugins, and files in their agentic creation and vibecoding.
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+> A curated, community-driven repository of templates, plugins, and ecosystem maps for AI agent creation and vibecoding.
 
 ## Table of Contents
 
