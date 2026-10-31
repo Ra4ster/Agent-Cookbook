@@ -81,7 +81,7 @@
 <tr>
 <td width="50%" valign="top">
 
-### [ActionsGPT](https://chatgpt.com/g/g-TYAcjhGDG-actionsgpt)
+### [ActionsGPT](https://developers.openai.com/api/docs/actions/getting-started)
 
 Developer tool for designing, building, and validating OpenAPI 3.0 schemas for ChatGPT Custom Actions. Configures authentication, parameter definitions, and request/response structures.
 
@@ -91,7 +91,7 @@ Paste your API docs or cURL commands and prompt: "Convert this API into an OpenA
 </td>
 <td width="50%" valign="top">
 
-### [Diagrams: Show Me](https://chatgpt.com/g/g-5QGCDylER-diagrams-show-me)
+### [Diagrams: Show Me](https://github.com/bra1nDump/show-me-chatgpt-plugin)
 
 Interactive architectural and workflow visualization GPT. Generates and renders system architectures, sequence diagrams, state machines, and ER diagrams directly in chat using Mermaid.js and PlantUML.
 
@@ -103,7 +103,7 @@ Prompt: "Draw a sequence diagram for OAuth2 authorization code flow with PKCE" o
 <tr>
 <td width="50%" valign="top">
 
-### [Screenshot to Code GPT](https://chatgpt.com/g/g-h8l0HPuvh-screenshot-to-code)
+### [Screenshot to Code GPT](https://screenshottocode.com/)
 
 Frontend code generator that takes screenshots of user interfaces, wireframes, or Figma mockups and converts them into production-ready Tailwind CSS, React, Vue, or clean HTML.
 
@@ -131,19 +131,31 @@ Select the "GPT-4o with Canvas" model in ChatGPT. Prompt it to write a script or
 </td>
 <td width="50%" valign="top">
 
-### [DesignerGPT](https://chatgpt.com/g/g-2EoUIDhe9-designergpt)
+### [Product Design](https://openai.com/business/plugins/product-design/)
 
-Builds and instantly hosts responsive multi-page web applications and landing pages directly through chat, generating clean HTML/CSS with immediate live preview hosting.
+Use Product Design in ChatGPT to turn product briefs, research notes, and user journeys into concepts, flows, prototypes, critique notes, and design-ready artifacts.
 
 **How to use:**
-Prompt DesignerGPT: "Create a modern dark-mode landing page for a developer CLI tool with pricing tiers and interactive FAQ".
+
+1. Find the Product Design plugin
+
+- Browse for plugins that support your team’s tools and tasks.
+  ChatGPT plugin directory showing Google Drive, Slack, and Google Calendar.
+
+2. Install and connect
+
+- Install the plugin, then follow the prompts to review permissions and connect any required apps.
+
+3. Put it to work
+
+- Start a new chat in ChatGPT Work or Codex, describe the result you need, and ask it to use plugins.
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### [Grimoire](https://chatgpt.com/g/g-n7Rs0IK86-grimoire)
+### [Grimoire](https://grimoire.life/discover)
 
 The premier vibecoding wizard built for rapid prototyping, full-stack scaffolding, and prompt-driven software development. Features custom hotkey commands (`K` for command menu, `P` for project scaffolding, `R` for documentation) to build websites, web apps, and scripts from natural language.
 
@@ -153,7 +165,7 @@ Open Grimoire and describe your application idea. Type `K` to view command short
 </td>
 <td width="50%" valign="top">
 
-### [SQL Expert](https://chatgpt.com/g/g-m56kpU0bK-sql-expert)
+### [SQL Expert](https://github.com/bommadeni-git/sql-expert-plugin)
 
 Database optimization and query generation GPT for PostgreSQL, MySQL, SQLite, and Snowflake. Writes complex joins, optimizes query execution plans (`EXPLAIN`), and suggests composite indexes.
 
@@ -220,7 +232,7 @@ Enable Advanced Data Analysis in ChatGPT Plus/Team/Enterprise. Upload data files
 </td>
 <td width="50%" valign="top">
 
-### [Consensus](https://chatgpt.com/g/g-bo0Fi5Mf7-consensus)
+### [Consensus](https://openai.com/business/plugins/consensus/)
 
 Scientific research assistant connected to 200M+ peer-reviewed academic papers. Conducts literature searches, extracts grounded scientific consensus, and synthesizes citations for technical research.
 
@@ -1441,7 +1453,7 @@ Install via `npx skills add phuryn/pm-skills --agent claude-code`. Use commands 
 <tr>
 <td width="50%" valign="top">
 
-### [bigquery-mcp-server](https://www.npmjs.com/package/@google-cloud/bigquery-mcp-server)
+### [bigquery-mcp-server](https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp)
 
 Model Context Protocol server connecting Gemini and AI agents directly to Google Cloud BigQuery. Enables schema inspection, SQL generation, dry-run cost estimation, query execution, and data visualization.
 
@@ -1451,7 +1463,7 @@ Register in your agent's MCP config: `npx -y @google-cloud/bigquery-mcp-server -
 </td>
 <td width="50%" valign="top">
 
-### [google-cloud-mcp](https://www.npmjs.com/package/@google-cloud/cloud-mcp)
+### [google-cloud-mcp](https://docs.cloud.google.com/mcp)
 
 Infrastructure management and observability MCP server for Google Cloud Platform. Empowers Gemini agents to inspect Cloud Run logs, Cloud Monitoring metrics, compute instances, and IAM permissions directly from chat or terminal.
 
@@ -1463,7 +1475,7 @@ Start with `npx @google-cloud/cloud-mcp --project $GCP_PROJECT_ID`. Use prompts 
 <tr>
 <td width="50%" valign="top">
 
-### [vertex-ai-search-mcp](https://www.npmjs.com/package/@google-cloud/vertex-search-mcp)
+### [vertex-ai-search-mcp](https://github.com/ubie-oss/mcp-vertexai-search)
 
 Grounding and search connector exposing Google Vertex AI Search & Conversation datastores over MCP. Allows Gemini agents to query enterprise documents, PDFs, Intranet wikis, and structured databases with citations.
 
@@ -1491,7 +1503,7 @@ Install the GitHub App from GitHub Marketplace on your repositories. Mention `@g
 </td>
 <td width="50%" valign="top">
 
-### [Gemini Code Assist IDE Extension](https://docs.cloud.google.com/gemini/docs/code-assist/overview)
+### [Gemini Code Assist IDE Extension](https://codeassist.google/products/business)
 
 Official IDE plugin for Visual Studio Code, JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm), and Android Studio. Provides inline full-file code completion, chat-assisted debugging, license citation tracking, and enterprise code customization.
 
@@ -2032,7 +2044,7 @@ Cache key inspection, key TTL management, data structure querying, pub/sub testi
 <tr>
 <td width="50%" valign="top">
 
-### [Snowflake MCP](https://www.npmjs.com/package/@anthropic/snowflake-mcp)
+### [Snowflake MCP](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp)
 
 Official Snowflake MCP server for enterprise cloud data platforms. Enables agents to discover database schemas, inspect table schemas, execute SQL queries, and manage data governance pipelines.
 
@@ -2059,7 +2071,7 @@ Local database querying, schema introspection, automated SQL generation, and emb
 <tr>
 <td width="50%" valign="top">
 
-### [AWS MCP](https://www.npmjs.com/package/@awslabs/mcp-server-aws)
+### [AWS MCP](https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/)
 
 Official AWS resource management MCP server. Allows agents to query CloudWatch logs, inspect S3 buckets, check Lambda function executions, review ECS clusters, and diagnose cloud infrastructure configurations.
 
@@ -2091,7 +2103,7 @@ Container lifecycle management, real-time log streaming, image inspection, and D
 </td>
 <td width="50%" valign="top">
 
-### [Google Cloud MCP](https://www.npmjs.com/package/@google-cloud/cloud-mcp)
+### [Google Cloud MCP](https://docs.cloud.google.com/mcp)
 
 Official infrastructure management and observability server for Google Cloud Platform. Enables agents to inspect Cloud Run logs, check Cloud Monitoring metrics, view compute instances, and audit IAM permissions.
 
@@ -2602,7 +2614,7 @@ Modular model backend (local & cloud), `@` context providers, slash commands, cu
 <tr>
 <td width="50%" valign="top">
 
-### [Plandex](https://plandex.ai/)
+### [Plandex](https://github.com/plandex-ai/plandex)
 
 An open-source, terminal-based AI engine built specifically for large, complex multi-file engineering tasks. Uses git branch sandboxing, persistent conversation graphs, and structured plan-review workflows that let developers inspect and approve diffs before committing them.
 
@@ -2679,7 +2691,7 @@ Repository root `/AGENTS.md`. Universal multi-agent compatibility, deterministic
 <tr>
 <td width="50%" valign="top">
 
-### [ai-plugin.json](https://developers.openai.com/api/docs/actions)
+### [ai-plugin.json](https://developers.openai.com/api/docs/actions/getting-started)
 
 The OpenAPI manifest standard established by OpenAI and widely supported across agent platforms. Exposes external API endpoints, authentication schemes, and functional descriptions for tool-calling agents.
 
