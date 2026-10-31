@@ -1,8 +1,8 @@
 # Agent Cookbook
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/license/MIT)
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
 > A curated, community-driven repository of templates, plugins, and ecosystem maps for AI agent creation and vibecoding.
 
@@ -192,7 +192,7 @@ Export your Postman collection as an OpenAPI 3.0 specification and paste it into
 <tr>
 <td width="50%" valign="top">
 
-### [Zapier AI Actions](https://actions.zapier.com/)
+### [Zapier AI Actions](https://mcp.zapier.com/)
 
 Connects ChatGPT to over 6,000+ business and developer applications (Linear, Jira, Slack, Notion, Google Workspace) via conversational actions.
 
@@ -210,7 +210,7 @@ Configure actions at actions.zapier.com and import the Zapier OpenAPI action URL
 <tr>
 <td width="50%" valign="top">
 
-### [Advanced Data Analysis (Code Interpreter)](https://help.openai.com/en/articles/6825453-chatgpt-advanced-data-analysis)
+### [Advanced Data Analysis (Code Interpreter)](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)
 
 OpenAI's native sandboxed Python execution environment built into ChatGPT. Executes Python code in real time to analyze datasets, test algorithms, parse ASTs, process images, and generate downloadable files.
 
@@ -353,7 +353,7 @@ Add via `claude mcp add docker -- npx -y mcp-server-docker`. Ask Claude: "Inspec
 </td>
 <td width="50%" valign="top">
 
-### [github](https://github.com/modelcontextprotocol/servers/tree/main/src/github)
+### [github](https://github.com/modelcontextprotocol/servers)
 
 Official GitHub Model Context Protocol server enabling Claude Code to search repositories, inspect file contents across commits, create and update pull requests, query issues, and read CI/CD run logs directly.
 
@@ -365,7 +365,7 @@ Add the MCP server via `claude mcp add github -- npx -y @modelcontextprotocol/se
 <tr>
 <td width="50%" valign="top">
 
-### [playwright-mcp](https://github.com/executeautomation/mcp-playwright)
+### [playwright-mcp](https://github.com/modelcontextprotocol/servers)
 
 Playwright browser automation and testing MCP server for coding agents. Executes end-to-end tests, inspects dynamic DOM elements, captures full-page screenshots, and verifies visual regressions.
 
@@ -375,7 +375,7 @@ Register via `claude mcp add playwright -- npx -y @executeautomation/playwright-
 </td>
 <td width="50%" valign="top">
 
-### [postgres](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres)
+### [postgres](https://github.com/modelcontextprotocol/servers)
 
 Official PostgreSQL Model Context Protocol server providing read-only database exploration, schema introspection, index checking, and query execution planning (`EXPLAIN ANALYZE`).
 
@@ -387,7 +387,7 @@ Register the MCP server via `claude mcp add postgres -- npx -y @modelcontextprot
 <tr>
 <td width="50%" valign="top">
 
-### [sentry](https://github.com/getsentry/sentry-mcp)
+### [sentry](https://github.com/getsentry/toolkit)
 
 Official Sentry MCP server that connects Claude Code directly to production telemetry, allowing Claude to inspect unresolved issues, retrieve full stack traces, analyze breadcrumbs, and formulate fixes.
 
@@ -397,7 +397,7 @@ Register with `claude mcp add sentry -- npx -y @sentry/mcp-server` using your Se
 </td>
 <td width="50%" valign="top">
 
-### [sqlite](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite)
+### [sqlite](https://github.com/modelcontextprotocol/servers)
 
 Official SQLite Model Context Protocol server allowing Claude Code to inspect local database schemas, run exploratory SQL queries, verify data integrity, and test migrations in real time.
 
@@ -1060,12 +1060,12 @@ Install via `npx skills add affaan-m/ECC --agent claude-code`. Take advantage of
 <tr>
 <td width="50%" valign="top">
 
-### [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)
+### [oh-my-claudecode](http://oh-my-claudecode.dev/)
 
 Teams-first multi-agent orchestration framework for Claude Code with zero learning curve, managing parallel agents, background execution, and workflow coordination.
 
 **How to use:**
-Install via `npm install -g oh-my-claude-sisyphus` or follow documentation at https://yeachan-heo.github.io/oh-my-claudecode-website.
+Install via `npm install -g oh-my-claude-sisyphus` or follow documentation at http://oh-my-claudecode.dev/.
 
 </td>
 <td width="50%" valign="top">
@@ -1441,7 +1441,7 @@ Install via `npx skills add phuryn/pm-skills --agent claude-code`. Use commands 
 <tr>
 <td width="50%" valign="top">
 
-### [bigquery-mcp-server](https://github.com/google-cloud/bigquery-mcp-server)
+### [bigquery-mcp-server](https://www.npmjs.com/package/@google-cloud/bigquery-mcp-server)
 
 Model Context Protocol server connecting Gemini and AI agents directly to Google Cloud BigQuery. Enables schema inspection, SQL generation, dry-run cost estimation, query execution, and data visualization.
 
@@ -1451,7 +1451,7 @@ Register in your agent's MCP config: `npx -y @google-cloud/bigquery-mcp-server -
 </td>
 <td width="50%" valign="top">
 
-### [google-cloud-mcp](https://github.com/google-cloud/cloud-mcp)
+### [google-cloud-mcp](https://www.npmjs.com/package/@google-cloud/cloud-mcp)
 
 Infrastructure management and observability MCP server for Google Cloud Platform. Empowers Gemini agents to inspect Cloud Run logs, Cloud Monitoring metrics, compute instances, and IAM permissions directly from chat or terminal.
 
@@ -1463,7 +1463,7 @@ Start with `npx @google-cloud/cloud-mcp --project $GCP_PROJECT_ID`. Use prompts 
 <tr>
 <td width="50%" valign="top">
 
-### [vertex-ai-search-mcp](https://github.com/google-cloud/vertex-search-mcp)
+### [vertex-ai-search-mcp](https://www.npmjs.com/package/@google-cloud/vertex-search-mcp)
 
 Grounding and search connector exposing Google Vertex AI Search & Conversation datastores over MCP. Allows Gemini agents to query enterprise documents, PDFs, Intranet wikis, and structured databases with citations.
 
@@ -1481,7 +1481,7 @@ Configure via MCP JSON: `{"command": "npx", "args": ["-y", "@google-cloud/vertex
 <tr>
 <td width="50%" valign="top">
 
-### [Gemini Code Assist for GitHub](https://github.com/marketplace/gemini-code-assist)
+### [Gemini Code Assist for GitHub](https://github.com/marketplace)
 
 Official GitHub App by Google Cloud providing automated pull request summaries, intelligent semantic code review, test case generation, and conversational code exploration on GitHub repos.
 
@@ -1491,7 +1491,7 @@ Install the GitHub App from GitHub Marketplace on your repositories. Mention `@g
 </td>
 <td width="50%" valign="top">
 
-### [Gemini Code Assist IDE Extension](https://cloud.google.com/gemini/docs/code-assist/overview)
+### [Gemini Code Assist IDE Extension](https://docs.cloud.google.com/gemini/docs/code-assist/overview)
 
 Official IDE plugin for Visual Studio Code, JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm), and Android Studio. Provides inline full-file code completion, chat-assisted debugging, license citation tracking, and enterprise code customization.
 
@@ -1712,7 +1712,7 @@ Register the MCP server in your configuration: `claude mcp add moonshot -- npx -
 <tr>
 <td width="50%" valign="top">
 
-### [moonshot-python](https://github.com/MoonshotAI/moonshot-python)
+### [moonshot-python](https://github.com/MoonshotAI)
 
 Official Moonshot AI Python SDK with native streaming, file caching, tool calling, and long-context document analysis utilities optimized for large-scale code synthesis.
 
@@ -1768,7 +1768,7 @@ Install via Claude Code plugin marketplace or `npx skills add linxule/kimi-plugi
 <tr>
 <td width="50%" valign="top">
 
-### [Google Agent Development Kit (ADK)](https://github.com/google/agents)
+### [Google Agent Development Kit (ADK)](https://ai.google.dev/)
 
 Google's official agentic framework and SDK for building production AI agents with Gemini reasoning models. Features native multimodal streaming, code execution sandboxes, Grounding with Google Search, and seamless Model Context Protocol (MCP) tool integration.
 
@@ -1778,7 +1778,7 @@ Native Gemini 2.0/2.5 multimodal integration, Google Search grounding, code exec
 </td>
 <td width="50%" valign="top">
 
-### [LlamaIndex Workflows](https://docs.llamaindex.ai/en/stable/module_guides/workflow/)
+### [LlamaIndex Workflows](https://developers.llamaindex.ai/python/llamaagents/workflows/)
 
 An event-driven, execution-graph agent framework designed for complex document retrieval, structured data reasoning, and advanced RAG architectures. Coordinates independent async steps through typed events with full observability.
 
@@ -1790,7 +1790,7 @@ Event-driven step orchestration, typed event propagation, advanced multi-modal R
 <tr>
 <td width="50%" valign="top">
 
-### [PydanticAI](https://ai.pydantic.dev/)
+### [PydanticAI](https://pydantic.dev/docs/ai/overview/)
 
 Production-grade, type-safe Python agent framework created by the Pydantic team. Brings static type checking, runtime schema validation, dependency injection, and ergonomic streaming to generative AI agent workflows.
 
@@ -1817,7 +1817,7 @@ Code-agent execution loops, secure Python sandboxing, Hugging Face Hub integrati
 <tr>
 <td width="50%" valign="top">
 
-### [CrewAI](https://www.crewai.com/)
+### [CrewAI](https://crewai.com/)
 
 Premier role-based multi-agent orchestration framework for Python. Empowers autonomous agents to assume specialized personas, collaborate in structured crews, share memory, and delegate tasks sequentially or hierarchically.
 
@@ -1849,7 +1849,7 @@ Unified .NET & Python runtime, event-driven multi-agent messaging, distributed a
 </td>
 <td width="50%" valign="top">
 
-### [OpenAI Agents SDK](https://platform.openai.com/docs/guides/agents)
+### [OpenAI Agents SDK](https://developers.openai.com/api/docs/guides/agents)
 
 OpenAI's official lightweight, ergonomic framework optimized for building tightly scoped assistants, clean function execution, and multi-agent delegation. Features declarative agent definitions, stateful sessions, and seamless agent handoffs.
 
@@ -1917,7 +1917,7 @@ Composable pipeline graph architecture, diverse document store integrations, con
 <tr>
 <td width="50%" valign="top">
 
-### [Filesystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)
+### [Filesystem MCP](https://github.com/modelcontextprotocol/servers)
 
 The reference Model Context Protocol server that provides AI agents with strictly scoped, secure read, write, move, and search access across local project directories with sandboxed directory path boundaries.
 
@@ -1927,7 +1927,7 @@ Scoped directory access, recursive file search, fast text/binary reads, write ap
 </td>
 <td width="50%" valign="top">
 
-### [Git MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/git)
+### [Git MCP](https://github.com/modelcontextprotocol/servers)
 
 Direct MCP tool integration for local git repositories. Enables agents to inspect commit histories, read uncommitted working tree diffs, stage files, switch branches, and view git blame annotations.
 
@@ -1939,7 +1939,7 @@ Local commit inspection, diff generation, branch switching, status checks, and s
 <tr>
 <td width="50%" valign="top">
 
-### [GitHub MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/github)
+### [GitHub MCP](https://github.com/modelcontextprotocol/servers)
 
 The official GitHub MCP server enabling agents to search repositories, inspect file contents, analyze pull requests, review commits, create issues, and manage GitHub Actions CI workflows.
 
@@ -1949,7 +1949,7 @@ Repository search, pull request creation/reviews, issue triage, branch managemen
 </td>
 <td width="50%" valign="top">
 
-### [GitLab MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/gitlab)
+### [GitLab MCP](https://github.com/modelcontextprotocol/servers)
 
 Full enterprise GitLab integration for MCP. Allows AI assistants to inspect merge requests, triage issues, trigger and monitor CI/CD pipelines, and interact with GitLab repository branches via the REST API.
 
@@ -1961,7 +1961,7 @@ Merge request reviews, pipeline status tracking, issue management, project repos
 <tr>
 <td width="50%" valign="top">
 
-### [Memory MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/memory)
+### [Memory MCP](https://github.com/modelcontextprotocol/servers)
 
 A graph-based persistent memory server for agents. Uses a knowledge graph structure to persist entities, relations, observations, and user preferences across distinct coding sessions without context loss.
 
@@ -1988,7 +1988,7 @@ Command execution, build tool automation, test suite verification, background pr
 <tr>
 <td width="50%" valign="top">
 
-### [BigQuery MCP](https://github.com/google-cloud/bigquery-mcp-server)
+### [BigQuery MCP](https://www.npmjs.com/package/@google-cloud/bigquery-mcp-server)
 
 Direct Google Cloud BigQuery connector exposing enterprise data warehouse datasets. Enables schema discovery, query generation, dry-run cost estimation, and large-scale data analytics over standard SQL.
 
@@ -1998,7 +1998,7 @@ Data warehouse schema inspection, cost estimation dry-runs, SQL query execution,
 </td>
 <td width="50%" valign="top">
 
-### [PostgreSQL MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres)
+### [PostgreSQL MCP](https://github.com/modelcontextprotocol/servers)
 
 The official PostgreSQL server providing read-only or read-write database connectivity. Allows agents to discover schemas, inspect table structures, analyze indexes, explain query plans, and execute analytical SQL queries.
 
@@ -2032,7 +2032,7 @@ Cache key inspection, key TTL management, data structure querying, pub/sub testi
 <tr>
 <td width="50%" valign="top">
 
-### [Snowflake MCP](https://github.com/Snowflake-Labs/mcp-server-snowflake)
+### [Snowflake MCP](https://www.npmjs.com/package/@anthropic/snowflake-mcp)
 
 Official Snowflake MCP server for enterprise cloud data platforms. Enables agents to discover database schemas, inspect table schemas, execute SQL queries, and manage data governance pipelines.
 
@@ -2042,7 +2042,7 @@ Data warehouse exploration, analytical SQL querying, role-based access managemen
 </td>
 <td width="50%" valign="top">
 
-### [SQLite MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite)
+### [SQLite MCP](https://github.com/modelcontextprotocol/servers)
 
 Lightweight, zero-config local database connector allowing agents to query tables, inspect schemas, parse relationships, and run analytical queries over local `.sqlite` or `.db` files.
 
@@ -2059,7 +2059,7 @@ Local database querying, schema introspection, automated SQL generation, and emb
 <tr>
 <td width="50%" valign="top">
 
-### [AWS MCP](https://github.com/awslabs/mcp-server-aws)
+### [AWS MCP](https://www.npmjs.com/package/@awslabs/mcp-server-aws)
 
 Official AWS resource management MCP server. Allows agents to query CloudWatch logs, inspect S3 buckets, check Lambda function executions, review ECS clusters, and diagnose cloud infrastructure configurations.
 
@@ -2091,7 +2091,7 @@ Container lifecycle management, real-time log streaming, image inspection, and D
 </td>
 <td width="50%" valign="top">
 
-### [Google Cloud MCP](https://github.com/google-cloud/cloud-mcp)
+### [Google Cloud MCP](https://www.npmjs.com/package/@google-cloud/cloud-mcp)
 
 Official infrastructure management and observability server for Google Cloud Platform. Enables agents to inspect Cloud Run logs, check Cloud Monitoring metrics, view compute instances, and audit IAM permissions.
 
@@ -2103,7 +2103,7 @@ Cloud Run log analysis, Cloud Monitoring metrics, compute resource inspection, a
 <tr>
 <td width="50%" valign="top">
 
-### [Kubernetes MCP](https://github.com/strowk/mcp-k8s)
+### [Kubernetes MCP](https://github.com/strowk/mcp-k8s-go)
 
 Direct cluster management server for Kubernetes environments. Empowers agents to query pods, inspect deployment manifests, stream container logs, review cluster events, and debug infrastructure failures.
 
@@ -2113,7 +2113,7 @@ Pod inspection, log streaming, deployment status checks, namespace management, a
 </td>
 <td width="50%" valign="top">
 
-### [Sentry MCP](https://github.com/getsentry/sentry-mcp)
+### [Sentry MCP](https://github.com/getsentry/toolkit)
 
 Official Sentry integration for real-time application monitoring. Allows agents to query production issues, examine stack traces, inspect error breadcrumbs, analyze release regressions, and suggest code fixes.
 
@@ -2130,7 +2130,7 @@ Production issue triage, stack trace analysis, error tag filtering, release trac
 <tr>
 <td width="50%" valign="top">
 
-### [Atlassian Jira & Confluence MCP](https://github.com/atlassian/mcp-atlassian)
+### [Atlassian Jira & Confluence MCP](https://developer.atlassian.com/cloud/)
 
 Official Atlassian integration connecting agents directly to Jira and Confluence. Enables agents to search enterprise project tickets, update sprint boards, and read/write engineering documentation.
 
@@ -2152,7 +2152,7 @@ Design token extraction, component hierarchy inspection, visual layout translati
 <tr>
 <td width="50%" valign="top">
 
-### [Google Drive & Workspace MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive)
+### [Google Drive & Workspace MCP](https://github.com/modelcontextprotocol/servers)
 
 Official Google Drive integration for MCP. Enables agents to search files across corporate Drives, extract text from PDFs, read Google Docs and Sheets, and synthesize cross-document insights.
 
@@ -2184,7 +2184,7 @@ Workspace database search, page block reading/writing, rich text formatting, and
 </td>
 <td width="50%" valign="top">
 
-### [Slack MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/slack)
+### [Slack MCP](https://github.com/modelcontextprotocol/servers)
 
 Official Slack integration for team communication. Allows AI agents to read public channels, search team chat histories, post status updates, create messages, and summarize threaded technical discussions.
 
@@ -2201,7 +2201,7 @@ Channel message reading, conversational thread summarization, broadcast updates,
 <tr>
 <td width="50%" valign="top">
 
-### [Brave Search MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search)
+### [Brave Search MCP](https://github.com/modelcontextprotocol/servers)
 
 Official web search and local business intelligence connector powered by Brave's independent, privacy-focused search index. Provides fresh web search results, news queries, and URL discovery.
 
@@ -2211,7 +2211,7 @@ Independent web search indexing, real-time news retrieval, localized business qu
 </td>
 <td width="50%" valign="top">
 
-### [Fetch MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch)
+### [Fetch MCP](https://github.com/modelcontextprotocol/servers)
 
 A lightweight, efficient HTTP resource fetcher that downloads web pages, parses raw HTML, strips boilerplate headers and scripts, and converts content into clean, readable markdown for agent reasoning.
 
@@ -2223,7 +2223,7 @@ Fast URL fetching, HTML-to-Markdown conversion, boilerplate stripping, and struc
 <tr>
 <td width="50%" valign="top">
 
-### [Firecrawl MCP](https://github.com/mendableai/firecrawl-mcp-server)
+### [Firecrawl MCP](https://github.com/firecrawl/firecrawl-mcp-server)
 
 Direct MCP bridge to the Firecrawl engine. Crawls complex, dynamic websites, bypasses anti-bot obstacles, and returns clean, LLM-ready markdown optimized for developer agent ingestion.
 
@@ -2233,7 +2233,7 @@ Deep subpage web crawling, JavaScript-rendered scraping, clean markdown conversi
 </td>
 <td width="50%" valign="top">
 
-### [Playwright MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/playwright)
+### [Playwright MCP](https://github.com/modelcontextprotocol/servers)
 
 Official browser automation server allowing agents to drive real Chromium, Firefox, and WebKit browsers. Executes clicks, form submissions, navigation, console log capturing, and structured accessibility snapshot inspections.
 
@@ -2245,7 +2245,7 @@ End-to-end browser automation, accessibility tree snapshots, form interactions, 
 <tr>
 <td width="50%" valign="top">
 
-### [Puppeteer MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer)
+### [Puppeteer MCP](https://github.com/modelcontextprotocol/servers)
 
 Headless Chrome automation tool enabling agents to navigate web pages, execute client-side JavaScript, capture full-page screenshots, generate PDFs, and scrape dynamic client-rendered web content.
 
@@ -2296,7 +2296,7 @@ Multi-agent orchestration, interactive artifacts, subagent delegation, backgroun
 <tr>
 <td width="50%" valign="top">
 
-### [Melty](https://melty.dev/)
+### [Melty](https://www.melty.dev/)
 
 The first open-source AI code editor that observes your programming workflow from compiler output to terminal commands and git commits, anticipating your next steps and generating clean, context-aware commit messages and diffs.
 
@@ -2306,7 +2306,7 @@ Compiler-aware feedback loops, automated semantic commit drafting, state-of-flow
 </td>
 <td width="50%" valign="top">
 
-### [PearAI](https://trypear.ai/)
+### [PearAI](https://www.trypear.ai/)
 
 An open-source AI code editor (backed by Y Combinator) designed as a community-driven, transparent alternative to proprietary AI IDEs. Integrates vetted open-source AI extensions, conversational chat, inline refactoring, and multi-model support into a unified distribution.
 
@@ -2340,7 +2340,7 @@ Zero telemetry, local model execution (Ollama/vLLM), private API keys, and open-
 <tr>
 <td width="50%" valign="top">
 
-### [Windsurf](https://windsurf.com/)
+### [Windsurf](https://codeium.com/windsurf)
 
 Codeium's next-generation AI IDE built around the Cascade collaborative agent. Features real-time deep codebase awareness, predictive edits via Supercomplete, multi-file refactoring, and enterprise-grade security, making it a strong choice for teams and large codebases.
 
@@ -2399,7 +2399,7 @@ Local CLI execution, autonomous tool calling, extensible Model Context Protocol 
 </td>
 <td width="50%" valign="top">
 
-### [OpenHands](https://all-hands.dev/)
+### [OpenHands](https://www.openhands.dev/)
 
 The premier open-source autonomous AI software developer platform (formerly OpenDevin) with community-leading SWE-bench scores. Operates within an isolated Docker sandbox with access to a terminal, web browser, and file editor to resolve GitHub issues and build software packages.
 
@@ -2460,7 +2460,7 @@ Codebase knowledge graphs, custom agent creation, automated regression testing, 
 <tr>
 <td width="50%" valign="top">
 
-### [Sourcegraph Cody](https://sourcegraph.com/cody)
+### [Sourcegraph Cody](https://sourcegraph.com/docs/cody)
 
 An enterprise-grade AI coding assistant powered by Sourcegraph's comprehensive code graph and multi-repo semantic search, enabling accurate codebase-wide context retrieval, multi-file code generation, and automated documentation.
 
@@ -2519,7 +2519,7 @@ Rapid conversational app building, Supabase backend integration, GitHub bidirect
 </td>
 <td width="50%" valign="top">
 
-### [Marblism](https://marblism.com/)
+### [Marblism](https://www.marblism.com/)
 
 A specialized prompt-to-app platform designed for building SaaS products. Generates complete, deployable codebases featuring Next.js, Prisma ORM, PostgreSQL, Stripe payments, authentication, and Tailwind UI from natural-language specifications.
 
@@ -2531,7 +2531,7 @@ Production-ready SaaS scaffolding, pre-configured Stripe monetization, Prisma OR
 <tr>
 <td width="50%" valign="top">
 
-### [Tempo Labs](https://tempolabs.ai/)
+### [Tempo Labs](https://www.tempo.new/)
 
 A generative visual React workspace that lets developers build, style, and edit production React and Tailwind CSS components either visually or through natural-language prompts, with instant bidirectional synchronization to GitHub repositories.
 
@@ -2541,7 +2541,7 @@ Bidirectional visual canvas and code sync, production React/Tailwind output, com
 </td>
 <td width="50%" valign="top">
 
-### [v0 by Vercel](https://v0.dev/)
+### [v0 by Vercel](https://v0.app/)
 
 Vercel's generative UI and full-stack web application builder. Crafts production-ready React, Next.js, and Tailwind CSS interfaces from natural language or Figma designs, featuring real-time visual iteration, component-level prompting, and one-click Vercel deployments.
 
@@ -2568,7 +2568,7 @@ Tree-sitter repository map AST indexing, multi-model support, voice prompt input
 </td>
 <td width="50%" valign="top">
 
-### [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
+### [Claude Code](https://code.claude.com/docs/en/overview)
 
 Anthropic's official agentic terminal interface that navigates entire codebases, runs commands, executes test suites, diagnoses errors, and commits git changes autonomously with deep reasoning powered by Claude 3.7 Sonnet.
 
@@ -2612,7 +2612,7 @@ Isolated git branch sandboxing, long-running persistent task context, multi-file
 </td>
 <td width="50%" valign="top">
 
-### [Roo Code](https://roocode.com/)
+### [Roo Code](https://roomote.dev/)
 
 An advanced autonomous AI coding assistant extension for VS Code (fork of Cline) featuring customizable agent modes (Architect, Code, Ask, Debugger), fine-grained token usage tracking, Model Context Protocol (MCP) tool support, and interactive diff approvals.
 
@@ -2645,7 +2645,7 @@ Repository root `/.cursorrules`. Composer multi-file prompting, library version 
 </td>
 <td width="50%" valign="top">
 
-### [.github/copilot-instructions.md](https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot)
+### [.github/copilot-instructions.md](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions)
 
 GitHub's native custom instruction standard for GitHub Copilot. Guides inline code completions, Copilot Chat conversations, and automated pull request generation across entire development teams.
 
@@ -2657,7 +2657,7 @@ Located at `.github/copilot-instructions.md`. Native GitHub integration, team-wi
 <tr>
 <td width="50%" valign="top">
 
-### [.windsurfrules](https://windsurf.com/)
+### [.windsurfrules](https://codeium.com/windsurf)
 
 Windsurf's rule configuration file for Codeium's Cascade collaborative agent. Configures workspace-wide instructions, system architecture context, and style guidelines that govern multi-file edits and Supercomplete predictions.
 
@@ -2679,7 +2679,7 @@ Repository root `/AGENTS.md`. Universal multi-agent compatibility, deterministic
 <tr>
 <td width="50%" valign="top">
 
-### [ai-plugin.json](https://platform.openai.com/docs/plugins/getting-started)
+### [ai-plugin.json](https://developers.openai.com/api/docs/actions)
 
 The OpenAPI manifest standard established by OpenAI and widely supported across agent platforms. Exposes external API endpoints, authentication schemes, and functional descriptions for tool-calling agents.
 
@@ -2689,7 +2689,7 @@ Hosted at `/.well-known/ai-plugin.json`. Standardized API exposure, OpenAPI spec
 </td>
 <td width="50%" valign="top">
 
-### [CLAUDE.md](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
+### [CLAUDE.md](https://code.claude.com/docs/en/overview)
 
 Anthropic's official project context and persistent memory file for Claude Code. Automatically discovered and ingested at the start of every terminal coding session to guide build commands, test execution, architecture rules, and personal workflow preferences.
 
@@ -2886,7 +2886,7 @@ You are an expert software engineer acting as a core contributor to this reposit
 
 ### Starter ai-plugin.json Template:
 
-**How to use this:** Save this file as `ai-plugin.json` and host it at the root of your domain in a `.well-known` folder (e.g., `[https://api.yourdomain.com/.well-known/ai-plugin.json](https://api.yourdomain.com/.well-known/ai-plugin.json)`). Agentic frameworks and LLMs use this manifest to discover your API, understand its authentication requirements, and locate your OpenAPI specification.
+**How to use this:** Save this file as `ai-plugin.json` and host it at the root of your domain in a `.well-known` folder (e.g., `https://api.yourdomain.com/.well-known/ai-plugin.json`). Agentic frameworks and LLMs use this manifest to discover your API, understand its authentication requirements, and locate your OpenAPI specification.
 
 ```json
 {
@@ -2900,12 +2900,12 @@ You are an expert software engineer acting as a core contributor to this reposit
   },
   "api": {
     "type": "openapi",
-    "url": "https://api.yourdomain.com/openapi.yaml",
+    "url": "[https://api.yourdomain.com/openapi.yaml](https://api.yourdomain.com/openapi.yaml)",
     "is_user_authenticated": false
   },
-  "logo_url": "https://yourdomain.com/logo.png",
+  "logo_url": "[https://yourdomain.com/logo.png](https://yourdomain.com/logo.png)",
   "contact_email": "support@yourdomain.com",
-  "legal_info_url": "https://yourdomain.com/legal"
+  "legal_info_url": "[https://yourdomain.com/legal](https://yourdomain.com/legal)"
 }
 ```
 
@@ -2930,6 +2930,7 @@ You are an expert software engineer acting as a core contributor to this reposit
 
 ## Optional
 - [External Link or Secondary Page](https://example.com/path): [Description...]
+
 
 ```
 
@@ -2997,11 +2998,5 @@ Thank you for exploring the **Agent Cookbook**! The AI agent and vibecoding ecos
 If you found these templates and ecosystem maps helpful, please consider **starring the repository** ⭐ to help others discover it.
 
 - **Have a tool to add?** We would love to see it. Read our [Contributing Guidelines](CONTRIBUTING.md) to see how to format your submission.
-- **Spotted a broken link?** Let us know by [opening an issue](https://github.com/Ra4ster/Agent-Cookbook/issues) or submitting a quick PR.
+- **Spotted a broken link?** Let us know by [opening an issue](https://www.google.com/search?q=https://github.com/Ra4ster/Agent-Cookbook/issues) or submitting a quick PR.
 - **Found a security concern?** Please review our [Security Policy](SECURITY.md) for responsible disclosure.
-
-<br/>
-
-<div align="center">
-  <a href="#agent-cookbook"><b>👆 Back to Top</b></a>
-</div>
