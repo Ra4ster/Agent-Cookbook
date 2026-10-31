@@ -48,6 +48,10 @@ This repo is a collection of useful tools for people needing templates, plugins,
     - [Web Browsing, Search & Content Extraction](#web-browsing-search--content-extraction)
     - [DevOps, Cloud Infrastructure & Observability](#devops-cloud-infrastructure--observability)
     - [Team Collaboration, Project Management & Docs](#team-collaboration-project-management--docs)
+  - [Core Agent Frameworks](#core-agent-frameworks)
+    - [Graph-Based & Stateful Multi-Agent Orchestrators](#graph-based--stateful-multi-agent-orchestrators)
+    - [Code-First & Type-Safe Agent Frameworks](#code-first--type-safe-agent-frameworks)
+    - [Optimization, Evaluation & Production Runtimes](#optimization-evaluation--production-runtimes)
 
 ---
 
@@ -2521,6 +2525,155 @@ Design context integration allowing agents to inspect Figma design files, extrac
 
 **Key Capabilities:**
 Design token extraction, component hierarchy inspection, visual layout translation, and design-to-code pipelines.
+
+</td>
+</tr>
+</table>
+
+## Core Agent Frameworks
+
+### Graph-Based & Stateful Multi-Agent Orchestrators
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [LangGraph](https://www.langchain.com/langgraph)
+
+Leading open-source graph-based framework for designing precise, stateful, and cyclic multi-agent workflows. Enables complex multi-agent coordination with built-in persistence, human-in-the-loop approvals, time-travel debugging, and streaming architectures.
+
+**Key Capabilities:**
+Cyclic graph state machines, persistent memory checkpointers, human-in-the-loop approval gates, streaming execution, and multi-agent subgraphs.
+
+</td>
+<td width="50%" valign="top">
+
+### [CrewAI](https://www.crewai.com/)
+
+Premier role-based multi-agent orchestration framework for Python. Empowers autonomous agents to assume specialized personas, collaborate in structured crews, share memory, and delegate tasks sequentially or hierarchically.
+
+**Key Capabilities:**
+Role-based agent personas, autonomous task delegation, hierarchical and sequential processes, cross-agent memory, and rich tool integrations.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Microsoft Agent Framework](https://github.com/microsoft/autogen)
+
+The unified enterprise multi-agent orchestrator for the .NET and Python ecosystems, succeeding AutoGen and Semantic Kernel agents. Provides production-grade multi-agent coordination, event-driven messaging, enterprise observability, and declarative workflow execution.
+
+**Key Capabilities:**
+Unified .NET & Python runtime, event-driven multi-agent messaging, distributed agent state, OpenTelemetry observability, and enterprise cloud connectors.
+
+</td>
+<td width="50%" valign="top">
+
+### [OpenAI Agents SDK](https://platform.openai.com/docs/guides/agents)
+
+OpenAI's official lightweight, ergonomic framework optimized for building tightly scoped assistants, clean function execution, and multi-agent delegation. Features declarative agent definitions, stateful sessions, and seamless agent handoffs.
+
+**Key Capabilities:**
+Lightweight agent handoffs, guardrails validation, stateful session handling, built-in function calling, and native OpenAI model optimization.
+
+</td>
+</tr>
+</table>
+
+### Code-First & Type-Safe Agent Frameworks
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Google Agent Development Kit (ADK)](https://github.com/google/agents)
+
+Google's official agentic framework and SDK for building production AI agents with Gemini reasoning models. Features native multimodal streaming, code execution sandboxes, Grounding with Google Search, and seamless Model Context Protocol (MCP) tool integration.
+
+**Key Capabilities:**
+Native Gemini 2.0/2.5 multimodal integration, Google Search grounding, code execution sandboxes, Model Context Protocol (MCP) client, and Vertex AI Agent Builder deployment.
+
+</td>
+<td width="50%" valign="top">
+
+### [PydanticAI](https://ai.pydantic.dev/)
+
+Production-grade, type-safe Python agent framework created by the Pydantic team. Brings static type checking, runtime schema validation, dependency injection, and ergonomic streaming to generative AI agent workflows.
+
+**Key Capabilities:**
+Strict type validation via Pydantic V2, typed dependency injection, structured data extraction, real-time streaming validation, and model-agnostic architecture.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [LlamaIndex Workflows](https://docs.llamaindex.ai/en/stable/module_guides/workflow/)
+
+An event-driven, execution-graph agent framework designed for complex document retrieval, structured data reasoning, and advanced RAG architectures. Coordinates independent async steps through typed events with full observability.
+
+**Key Capabilities:**
+Event-driven step orchestration, typed event propagation, advanced multi-modal RAG routing, async concurrency, and OpenInference tracing.
+
+</td>
+<td width="50%" valign="top">
+
+### [Smolagents](https://github.com/huggingface/smolagents)
+
+Hugging Face's lightweight, code-first agent framework. Rather than forcing agents through verbose JSON tool calling, agents formulate actions by writing and executing raw Python code blocks, drastically reducing token consumption and latency.
+
+**Key Capabilities:**
+Code-agent execution loops, secure Python sandboxing, Hugging Face Hub integration, minimal dependency footprint, and multi-model support.
+
+</td>
+</tr>
+</table>
+
+### Optimization, Evaluation & Production Runtimes
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [DSPy](https://github.com/stanfordnlp/dspy)
+
+Stanford NLP's groundbreaking framework for programming rather than prompting foundation models. Replaces brittle prompt engineering with declarative modules and self-improving teleprompters/compilers that optimize prompts and few-shot examples automatically.
+
+**Key Capabilities:**
+Declarative LM programming, automated prompt compilers/optimizers, multi-stage pipeline verification, metric-driven self-tuning, and deterministic assertions.
+
+</td>
+<td width="50%" valign="top">
+
+### [Agno](https://github.com/agno-agi/agno)
+
+High-performance, lightweight multi-modal agent framework (formerly Phidata). Built for ultra-fast execution speed and low latency, featuring built-in vector memory, structured outputs, multi-agent teams, and visual UI monitoring.
+
+**Key Capabilities:**
+Ultra-low latency execution, native multi-modal memory, structured JSON generation, agent team routing, and real-time reasoning visualization.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Haystack](https://haystack.deepset.ai/)
+
+Modular, enterprise-grade open-source framework by deepset for building customized LLM pipelines, autonomous agents, and search applications. Features composable nodes, document store integrations, and production scalability.
+
+**Key Capabilities:**
+Composable pipeline graph architecture, diverse document store integrations, conditional branching, tool-augmented agent loops, and evaluation metrics.
+
+</td>
+<td width="50%" valign="top">
+
+### [Dify](https://dify.ai/)
+
+Leading open-source LLM application and multi-agent development platform. Combines a visual workflow canvas, prompt IDE, RAG pipeline orchestrator, and agent runtime with production monitoring and API access.
+
+**Key Capabilities:**
+Visual drag-and-drop workflow canvas, multi-agent orchestration, enterprise RAG pipelines, API-first architecture, and comprehensive observability.
 
 </td>
 </tr>
