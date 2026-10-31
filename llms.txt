@@ -9,6 +9,7 @@ This repository provides standardized context files (like AGENTS.md), ecosystem 
 - [AGENTS.md Starter Template](https://github.com/Ra4ster/Agent-Cookbook/blob/main/templates/AGENTS.md-template): The standard configuration file to drop into a repository to instruct AI coding assistants on project-specific rules, stack, and boundaries.
 - [Cursor Rules Template](https://github.com/Ra4ster/Agent-Cookbook/blob/main/templates/.cursorrules-template): General-purpose project instructions for Cursor IDE and Composer workflows.
 - [llms.txt Template](https://github.com/Ra4ster/Agent-Cookbook/blob/main/templates/llms.txt-template): Starter markdown index template for exposing documentation to LLMs.
+- [ai-plugin.json Template](https://github.com/Ra4ster/Agent-Cookbook/blob/main/templates/ai-plugin.json-template): Standard OpenAPI plugin manifest specification for tool-calling agents and custom actions.
 - [Issue Template for Tool Submissions](https://github.com/Ra4ster/Agent-Cookbook/blob/main/.github/ISSUE_TEMPLATE/submit_tool.md): The required YAML format for submitting a new MCP server or agent framework to the cookbook.
 
 ## Ecosystem Directories

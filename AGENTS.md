@@ -27,7 +27,7 @@ Agent Cookbook is a curated, comprehensive open-source directory, knowledge base
 - `README.md`: The primary cookbook documentation containing the Table of Contents, Plugins per Model, Developer Tools & Ecosystem, and Standardized Agent Context Files.
 - `AGENTS.md`: Project-specific instructions, coding standards, and boundaries for AI agents collaborating on this codebase (this file).
 - `assets/logos/`: High-resolution, zero-padding, transparent PNG logos for models (`claude.png`, `chatgpt.png`, `kimi.png`, `gemini.png`) sized for uniform optical scaling.
-- `templates/`: Generic starter templates (`AGENTS.md-template`, `.cursorrules-template`, `llms.txt-template`) for developers to copy into their own repositories.
+- `templates/`: Generic starter templates (`AGENTS.md-template`, `.cursorrules-template`, `llms.txt-template`, `ai-plugin.json-template`) for developers to copy into their own repositories.
 
 ## Coding Conventions
 

@@ -53,7 +53,11 @@ This repo is a collection of useful tools for people needing templates, plugins,
     - [Optimization, Evaluation & Production Runtimes](#optimization-evaluation--production-runtimes)
 - [Standardized Agent Context Files](#standardized-agent-context-files)
   - [Context File Standards & Formats](#context-file-standards--formats)
-  - [Starter AGENTS.md Template](#starter-agentsmd-template)
+  - [Starter Templates](#starter-templates)
+    - [Starter AGENTS.md Template](#starter-agentsmd-template)
+    - [Starter llms.txt Template](#starter-llmstxt-template)
+    - [Starter .cursorrules / .windsurfrules Template](#starter-cursorrules--windsurfrules-template)
+    - [Starter ai-plugin.json Template](#starter-ai-pluginjson-template)
 
 ---
 
@@ -2826,7 +2830,7 @@ Consider copying this file into your own codebase as `AGENTS.md`. It is general-
 > **To Agent**: If this `AGENTS.md` file is _not_ filled in yet, consider filling it in yourself as you analyze the codebase.
 ```
 
-### Starter llms.txt Template:
+### Starter llms.txt Template
 
 ```txt
 # [Project or Brand Name]
@@ -2850,7 +2854,7 @@ Consider copying this file into your own codebase as `AGENTS.md`. It is general-
 - [External Link or Secondary Page](https://example.com/path): [Description...]
 ```
 
-### Starter .cursorrules/.windsurfrules Template:
+### Starter .cursorrules / .windsurfrules Template
 
 ```md
 # General Project Rules
@@ -2894,4 +2898,27 @@ You are an expert software engineer acting as a core contributor to this reposit
 ## 6. Git Workflow
 
 - When asked to write a commit message, strictly use the Conventional Commits specification (e.g., `feat: add user authentication`, `fix: resolve null pointer in checkout`).
+```
+
+### Starter ai-plugin.json Template
+
+```json
+{
+  "schema_version": "v1",
+  "name_for_human": "[Your Plugin Name]",
+  "name_for_model": "[your_plugin_name_no_spaces]",
+  "description_for_human": "[A short, user-facing description of what the plugin does (max 120 chars).]",
+  "description_for_model": "[CRITICAL: The prompt for the AI. Explain exactly when and how the AI should use this plugin. Detail the required parameters, the constraints, and how to format the output for the user (max 8000 chars).]",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://api.yourdomain.com/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://yourdomain.com/logo.png",
+  "contact_email": "support@yourdomain.com",
+  "legal_info_url": "https://yourdomain.com/legal"
+}
 ```
