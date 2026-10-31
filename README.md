@@ -2760,13 +2760,15 @@ Repository root `/SECURITY.md`. Data loss prevention (DLP), secret containment, 
 </tr>
 </table>
 
+---
+
 ## Starter Templates
 
 ### Starter AGENTS.md Template
 
 > AGENTS.md is an open Markdown file standard placed at the root of a code repository to give AI coding agents project‑specific instructions, conventions, and commands, used by over 60,000 open‑source projects as of 2026.
 
-Consider copying this file into your own codebase as `AGENTS.md`. It is general-purpose and a good starter file.
+**How to use this:** Copy this file into the root directory of your codebase as `AGENTS.md`. Update the bracketed `[...]` sections to match your specific tech stack and commands. Coding agents will automatically read this file to understand your project's context and boundaries.
 
 ```md
 # AGENTS.md
@@ -2832,6 +2834,8 @@ Consider copying this file into your own codebase as `AGENTS.md`. It is general-
 
 ### Starter llms.txt Template
 
+**How to use this:** Save this file as `llms.txt` in the root of your repository or website. It acts as a high-density, low-noise map for AI web crawlers and agents to quickly locate your most important documentation without scraping unnecessary pages.
+
 ```txt
 # [Project or Brand Name]
 
@@ -2840,21 +2844,21 @@ Consider copying this file into your own codebase as `AGENTS.md`. It is general-
 [Optional: A brief paragraph of additional context if the project's purpose isn't entirely obvious from the summary, or if there are hard rules an agent must know before proceeding.]
 
 ## [Category Name - e.g., Core Documentation]
-
 - [Page Title](https://example.com/path): [A concrete, factual description of what the agent will find on this page. If you can include a hard fact (like a price or version number) right here, do it.]
 - [Page Title](https://example.com/path): [Description...]
 
 ## [Category Name - e.g., Key Features / Products]
-
 - [Page Title](https://example.com/path): [Description...]
 - [Page Title](https://example.com/path): [Description...]
 
 ## Optional
-
 - [External Link or Secondary Page](https://example.com/path): [Description...]
+
 ```
 
 ### Starter .cursorrules / .windsurfrules Template
+
+**How to use this:** Save this file as `.cursorrules` (or `.windsurfrules`) in the root directory of your project. The respective AI IDE will automatically read this file and use it as a persistent system prompt for all chat and inline code generation interactions.
 
 ```md
 # General Project Rules
@@ -2902,6 +2906,8 @@ You are an expert software engineer acting as a core contributor to this reposit
 
 ### Starter ai-plugin.json Template:
 
+**How to use this:** Save this file as `ai-plugin.json` and host it at the root of your domain in a `.well-known` folder (e.g., `[https://api.yourdomain.com/.well-known/ai-plugin.json](https://api.yourdomain.com/.well-known/ai-plugin.json)`). Agentic frameworks and LLMs use this manifest to discover your API, understand its authentication requirements, and locate your OpenAPI specification.
+
 ```json
 {
   "schema_version": "v1",
@@ -2924,6 +2930,8 @@ You are an expert software engineer acting as a core contributor to this reposit
 ```
 
 ### Starter SECURITY.md Template:
+
+**How to use this:** Save this file as `SECURITY.md` in the root of your repository (or inside a `.github/` folder). GitHub will automatically detect it and add a "Security policy" link to your repository's sidebar, guiding security researchers on how to report vulnerabilities privately rather than creating public issues.
 
 ```md
 # Security Policy
