@@ -1,0 +1,20 @@
+# [Project or Brand Name]
+
+> [One or two sentences summarizing exactly what this project is and who it is for. Use neutral, descriptive language—no marketing fluff.]
+
+[Optional: A brief paragraph of additional context if the project's purpose isn't entirely obvious from the summary, or if there are hard rules an agent must know before proceeding.]
+
+## [Category Name - e.g., Core Documentation]
+
+- [Page Title](https://example.com/path): [A concrete, factual description of what the agent will find on this page. If you can include a hard fact (like a price or version number) right here, do it.]
+- [Page Title](https://example.com/path): [Description...]
+
+## [Category Name - e.g., Key Features / Products]
+
+- [Page Title](https://example.com/path): [Description...]
+- [Page Title](https://example.com/path): [Description...]
+
+## Optional
+
+- [External Link or Secondary Page](https://example.com/path): [Description...]
+```

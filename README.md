@@ -2756,7 +2756,9 @@ Repository root `/SECURITY.md`. Data loss prevention (DLP), secret containment, 
 </tr>
 </table>
 
-## Starter AGENTS.md Template
+## Starter Templates
+
+### Starter AGENTS.md Template
 
 > AGENTS.md is an open Markdown file standard placed at the root of a code repository to give AI coding agents project‑specific instructions, conventions, and commands, used by over 60,000 open‑source projects as of 2026.
 
@@ -2822,4 +2824,74 @@ Consider copying this file into your own codebase as `AGENTS.md`. It is general-
 - Do not run destructive database migrations without explicit approval.
 
 > **To Agent**: If this `AGENTS.md` file is _not_ filled in yet, consider filling it in yourself as you analyze the codebase.
+```
+
+### Starter llms.txt Template:
+
+```txt
+# [Project or Brand Name]
+
+> [One or two sentences summarizing exactly what this project is and who it is for. Use neutral, descriptive language—no marketing fluff.]
+
+[Optional: A brief paragraph of additional context if the project's purpose isn't entirely obvious from the summary, or if there are hard rules an agent must know before proceeding.]
+
+## [Category Name - e.g., Core Documentation]
+
+- [Page Title](https://example.com/path): [A concrete, factual description of what the agent will find on this page. If you can include a hard fact (like a price or version number) right here, do it.]
+- [Page Title](https://example.com/path): [Description...]
+
+## [Category Name - e.g., Key Features / Products]
+
+- [Page Title](https://example.com/path): [Description...]
+- [Page Title](https://example.com/path): [Description...]
+
+## Optional
+
+- [External Link or Secondary Page](https://example.com/path): [Description...]
+```
+
+### Starter .cursorrules/.windsurfrules Template:
+
+```md
+# General Project Rules
+
+You are an expert software engineer acting as a core contributor to this repository. Your goal is to write clean, secure, and highly maintainable code.
+
+## 1. Code Style and Architecture
+
+- **Think before writing:** Always plan your approach step-by-step before generating code.
+- **Simplicity:** Prefer readable, simple solutions over clever, complex ones.
+- **Explicit over Implicit:** Use strict typing and explicit variable naming. Avoid `any` or untyped parameters.
+- **Modularity:** Keep functions small and focused on a single responsibility (SOLID principles). Do not dump everything into a single massive file.
+- **DRY (Don't Repeat Yourself):** Reuse existing utilities, UI components, and helper functions found in the project.
+
+## 2. Tech Stack Specifics
+
+- **Language:** [e.g., TypeScript / Python 3.10+]
+- **Framework:** [e.g., Next.js 14 (App Router) / FastAPI]
+- **Styling:** [e.g., Tailwind CSS / CSS Modules]
+- _Framework Rule:_ [e.g., Never use client-side hooks (`useState`, `useEffect`) in Server Components.]
+- _Database Rule:_ [e.g., Never write raw SQL; always use the Prisma ORM.]
+
+## 3. Formatting and Linting
+
+- Follow the existing formatting found in the surrounding code.
+- Ensure all code strictly adheres to the project's ESLint/Prettier/Ruff rules.
+- Remove unused imports, variables, and console logs before finalizing your output.
+
+## 4. Testing & Validation
+
+- Do not remove or disable tests to make a failing CI pipeline pass.
+- When writing a new feature, include unit tests that cover both the happy path and edge cases.
+- Always validate external data and user input at the system boundaries (e.g., using Zod or Pydantic).
+
+## 5. Security Guardrails
+
+- NEVER hardcode secrets, API keys, passwords, or environment variables in the codebase.
+- Always assume user input is malicious; sanitize and validate.
+- Respect the existing authentication and authorization middleware.
+
+## 6. Git Workflow
+
+- When asked to write a commit message, strictly use the Conventional Commits specification (e.g., `feat: add user authentication`, `fix: resolve null pointer in checkout`).
 ```

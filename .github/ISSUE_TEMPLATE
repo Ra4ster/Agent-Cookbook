@@ -1,0 +1,72 @@
+name: "🛠️ Submit a New Tool or Plugin"
+description: Suggest a new AI agent tool, MCP server, or framework for the cookbook.
+title: "[Tool]: "
+labels: ["enhancement", "tool-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to the Agent Cookbook! Please fill out the fields below. 
+        **Note:** We require objective, factual descriptions. Please avoid marketing language (e.g., "revolutionary", "best-in-class").
+
+  - type: input
+    id: tool_name
+    attributes:
+      label: Tool Name
+      placeholder: e.g., LangGraph
+    validations:
+      required: true
+
+  - type: input
+    id: tool_url
+    attributes:
+      label: Tool URL
+      placeholder: e.g., https://langchain-ai.github.io/langgraph/
+    validations:
+      required: true
+
+  - type: dropdown
+    id: pricing
+    attributes:
+      label: Pricing Model
+      options:
+        - Open Source
+        - Paid
+        - Freemium
+    validations:
+      required: true
+
+  - type: input
+    id: description
+    attributes:
+      label: Description (1 sentence max)
+      placeholder: e.g., A library for building stateful, multi-actor applications with LLMs.
+    validations:
+      required: true
+
+  - type: input
+    id: usefulness
+    attributes:
+      label: Why it's useful (1 sentence max)
+      placeholder: e.g., Allows developers to define cyclic graphs for agents that need memory and looping autonomous capabilities.
+    validations:
+      required: true
+
+  - type: input
+    id: category
+    attributes:
+      label: Target Category
+      description: Which section of the README does this belong in?
+      placeholder: e.g., Core Agent Frameworks
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Contribution Checklist
+      options:
+        - label: I have searched the README to ensure this tool is not already listed.
+          required: true
+        - label: I have kept the description factual and removed any marketing fluff.
+          required: true

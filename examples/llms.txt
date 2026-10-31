@@ -1,0 +1,20 @@
+# Agent Cookbook
+
+> A curated, community-driven repository of templates, plugins, and ecosystem maps for AI agent creation and vibecoding.
+
+This repository provides standardized context files (like AGENTS.md), ecosystem directories, and tool registries for developers building multi-agent systems and using AI-native IDEs.
+
+## Core Templates
+
+- [AGENTS.md Starter Template](https://github.com/yourusername/agent-cookbook/blob/main/templates/AGENTS.md): The standard configuration file to drop into a repository to instruct AI coding assistants on project-specific rules, stack, and boundaries.
+- [Issue Template for Tool Submissions](https://github.com/yourusername/agent-cookbook/blob/main/.github/ISSUE_TEMPLATE/submit_tool.md): The required YAML format for submitting a new MCP server or agent framework to the cookbook.
+
+## Ecosystem Directories
+
+- [Vibe Coding IDEs](https://github.com/yourusername/agent-cookbook/blob/main/README.md#vibe-coding-ides--app-builders): A directory of AI-native IDEs (Cursor, Windsurf) and prompt-to-app builders.
+- [Model Context Protocol (MCP) Servers](https://github.com/yourusername/agent-cookbook/blob/main/README.md#model-context-protocol-mcp-servers): A directory of official and community MCP servers for granting agents local filesystem, database, and browser access.
+- [Core Agent Frameworks](https://github.com/yourusername/agent-cookbook/blob/main/README.md#core-agent-frameworks): A directory of stateful and code-first orchestrators like LangGraph and CrewAI.
+
+## Optional
+
+- [llms.txt Official Specification](https://llmstxt.org/): The official spec for formatting this file.
