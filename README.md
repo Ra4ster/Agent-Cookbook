@@ -34,8 +34,7 @@ This repo is a collection of useful tools for people needing templates, plugins,
     - [Gemini CLI Developer Extensions & MCP](#gemini-cli-developer-extensions--mcp)
     - [Code Assist & GitHub Workflow Extensions](#code-assist--github-workflow-extensions)
     - [Cloud, BigQuery & Data Intelligence](#cloud-bigquery--data-intelligence)
-- [AGENTS.md](#agentsmd)
-- [Tooling Suggestions](#tooling-suggestions)
+- [Developer Tools & Ecosystem](#developer-tools--ecosystem)
   - [Vibe Coding IDEs & App Builders](#vibe-coding-ides--app-builders)
     - [AI-Native IDEs & Agentic Workspaces](#ai-native-ides--agentic-workspaces)
     - [Autonomous Software Engineers & Cloud Agents](#autonomous-software-engineers--cloud-agents)
@@ -52,6 +51,9 @@ This repo is a collection of useful tools for people needing templates, plugins,
     - [Graph-Based & Stateful Multi-Agent Orchestrators](#graph-based--stateful-multi-agent-orchestrators)
     - [Code-First & Type-Safe Agent Frameworks](#code-first--type-safe-agent-frameworks)
     - [Optimization, Evaluation & Production Runtimes](#optimization-evaluation--production-runtimes)
+- [Standardized Agent Context Files](#standardized-agent-context-files)
+  - [Context File Standards & Formats](#context-file-standards--formats)
+  - [Starter AGENTS.md Template](#starter-agentsmd-template)
 
 ---
 
@@ -1744,77 +1746,9 @@ Start with `npx @google-cloud/cloud-mcp --project $GCP_PROJECT_ID`. Use prompts 
 
 ---
 
-# AGENTS.md
+# Developer Tools & Ecosystem
 
-> AGENTS.md is an open Markdown file standard placed at the root of a code repository to give AI coding agents project‑specific instructions, conventions, and commands, used by over 60,000 open‑source projects as of 2026.
-
-Consider copying this file into your own codebase as `AGENTS.md`. It is general-purpose and a good starter file.
-
-```md
-# AGENTS.md
-
-## Project Purpose
-
-[Provide a 1-2 sentence description of what this software does so the agent understands the business context. e.g., A multi-tenant web application for managing inventory.]
-
-## Stack & Tech
-
-- **Language:** [e.g., TypeScript / Python 3.10+]
-- **Framework:** [e.g., Next.js / FastAPI / Django]
-- **Database:** [e.g., PostgreSQL with Prisma / MongoDB]
-- **Styling:** [e.g., Tailwind CSS / SCSS]
-
-## Commands
-
-- **Install:** `[e.g., npm install / pip install -r requirements.txt]`
-- **Run dev server:** `[e.g., npm run dev]`
-- **Run tests:** `[e.g., npm test]`
-- **Lint code:** `[e.g., npm run lint]`
-- **Build:** `[e.g., npm run build]`
-
-## Repository Structure
-
-- `src/components/`: Reusable interface components.
-- `src/features/`: Feature-specific UI and application logic.
-- `src/lib/`: Reusable infrastructure and external integrations.
-- `src/services/`: Core business logic and database interactions.
-- `tests/`: Unit and integration test suites.
-
-## Coding Conventions
-
-- Read the surrounding code before writing new code to match the existing style.
-- Use explicit typing for all new functions, variables, and parameters.
-- Prefer functional programming patterns where possible; avoid mutating state unexpectedly.
-- Keep functions small, testable, and focused on a single responsibility.
-- Do not introduce new state-management libraries or major dependencies without explicit permission.
-
-## Architecture Rules
-
-- Keep route handlers/controllers thin; delegate heavy logic to the `services/` layer.
-- Validate all external input at the system boundaries.
-- Never call the database directly from reusable UI components.
-- Reuse existing domain services and helper functions before creating new ones.
-
-## Testing
-
-- Add or update tests for any changed public behavior.
-- Prefer behavior-based assertions over testing private implementation details.
-- Run affected tests to ensure they pass before completing a task.
-- Do not weaken validation, types, or tests just to make a failing test pass.
-
-## Security & Boundaries
-
-- Never log user IDs, access tokens, API keys, passwords, or PII.
-- Enforce resource ownership and authorization on the backend for all protected routes.
-- Use the existing secret-management/environment-variable system.
-- Do not run destructive database migrations without explicit approval.
-
-> **To Agent**: If this `AGENTS.md` file is _not_ filled in yet, consider filling it in yourself as you analyze the codebase.
-```
-
-# Tooling Suggestions
-
-> This is a list of tools you should consider using, organized by type of tool (IDE, code review, et cetera).
+> A curated directory of frontier coding environments, protocol servers, and agent frameworks for building and scaling autonomous AI workflows.
 
 ## Vibe Coding IDEs & App Builders
 
@@ -2678,3 +2612,214 @@ Visual drag-and-drop workflow canvas, multi-agent orchestration, enterprise RAG 
 </td>
 </tr>
 </table>
+
+---
+
+# Standardized Agent Context Files
+
+> Standardized context files allow developers to communicate project architecture, coding standards, tool specs, and codebase snapshots across AI coding agents, IDEs, and LLM web interfaces with minimal token overhead and zero ambiguity.
+
+## Context File Standards & Formats
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [llms.txt & llms-full.txt](https://llmstxt.org/)
+
+Proposed by Answer.AI and widely adopted across developer platforms (Anthropic, Cloudflare, FastAI, Mintlify). Placed at `/llms.txt` of a documentation site or repo to provide a curated, structured markdown index of concepts, APIs, and links formatted specifically for LLM ingestion.
+
+**Format & Key Usage:**
+Standard path `https://example.com/llms.txt` or repo root. Curated markdown index, zero HTML parsing bloat, optional `llms-full.txt` for complete documentation bundling.
+
+</td>
+<td width="50%" valign="top">
+
+### [repomix-output.xml](https://repomix.com/)
+
+The standardized output file generated by Repomix (formerly Repopack). Packages an entire code repository into a single structured XML document with comprehensive directory schemas, file contents, token counts, and `.repomixignore` security filtering.
+
+**Format & Key Usage:**
+Generated via `npx repomix`. Encloses files in `<directory_structure>` and `<file>` XML tags, optimized for 1M–2M token context windows (Gemini 2.0, Claude 3.7 Sonnet).
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [AGENTS.md](https://agents.md/)
+
+An open, vendor-neutral specification placed at the root of a code repository to provide AI coding agents (Antigravity, Cursor, Windsurf, Claude Code, Aider) with business context, tech stacks, build commands, architecture invariants, and security boundaries.
+
+**Format & Key Usage:**
+Repository root `/AGENTS.md`. Universal multi-agent compatibility, deterministic developer commands, architectural constraints, and automated project onboarding.
+
+</td>
+<td width="50%" valign="top">
+
+### [CLAUDE.md](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
+
+Anthropic's official project context and persistent memory file for Claude Code. Automatically discovered and ingested at the start of every terminal coding session to guide build commands, test execution, architecture rules, and personal workflow preferences.
+
+**Format & Key Usage:**
+Repository root `/CLAUDE.md` or `~/.claude/CLAUDE.md`. Session auto-loading, test/lint command shortcuts, architectural dos/don'ts, and personal memory.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [.cursorrules](https://cursor.com/)
+
+Cursor's project-level instruction configuration file. Formats instructions, preferred component libraries, forbidden patterns, and code generation rules governing both inline completions and Composer agentic multi-file modifications.
+
+**Format & Key Usage:**
+Repository root `/.cursorrules`. Composer multi-file prompting, library version locking, coding style enforcement, and framework-specific patterns.
+
+</td>
+<td width="50%" valign="top">
+
+### [SKILL.md](https://github.com/google/skills)
+
+Open Agent Skills specification used across Google Antigravity, Kimi Code, and the Skills CLI. Uses structured YAML frontmatter (`name`, `description`, `version`) and step-by-step instructions that coding agents activate dynamically when relevant tasks arise.
+
+**Format & Key Usage:**
+Located in `.skills/<name>/SKILL.md` or `.gemini/skills/`. Modular capability bundles, declarative metadata, programmatic activation, and cross-agent portability.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [GEMINI.md](https://github.com/google-gemini/gemini-cli)
+
+Google Gemini CLI context and memory file. Ingested dynamically during terminal coding sessions to specify project constraints, custom slash commands, tool configurations, and persistent agent guidelines for Gemini models.
+
+**Format & Key Usage:**
+Repository root `/GEMINI.md` or `~/.gemini/GEMINI.md`. Project-specific Gemini CLI context, custom slash command mappings, and agent persona definitions.
+
+</td>
+<td width="50%" valign="top">
+
+### [.windsurfrules](https://windsurf.com/)
+
+Windsurf's rule configuration file for Codeium's Cascade collaborative agent. Configures workspace-wide instructions, system architecture context, and style guidelines that govern multi-file edits and Supercomplete predictions.
+
+**Format & Key Usage:**
+Repository root `/.windsurfrules` or global settings. Cascade multi-file governance, Supercomplete tuning, dependency boundaries, and project conventions.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [.github/copilot-instructions.md](https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot)
+
+GitHub's native custom instruction standard for GitHub Copilot. Guides inline code completions, Copilot Chat conversations, and automated pull request generation across entire development teams.
+
+**Format & Key Usage:**
+Located at `.github/copilot-instructions.md`. Native GitHub integration, team-wide coding consistency, PR summary steering, and editor-agnostic behavior.
+
+</td>
+<td width="50%" valign="top">
+
+### [ai-plugin.json](https://platform.openai.com/docs/plugins/getting-started)
+
+The OpenAPI manifest standard established by OpenAI and widely supported across agent platforms. Exposes external API endpoints, authentication schemes, and functional descriptions for tool-calling agents.
+
+**Format & Key Usage:**
+Hosted at `/.well-known/ai-plugin.json`. Standardized API exposure, OpenAPI specification binding, OAuth/API-key authentication, and web agent tool discovery.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [codebase-map.json / repo-map.txt](https://aider.chat/docs/repomap.html)
+
+Compact, structured Abstract Syntax Tree (AST) representation of an entire repository pioneered by Aider. Maps class definitions, function signatures, and cross-file references to provide accurate architectural context in under 1,000 tokens.
+
+**Format & Key Usage:**
+Generated via tree-sitter or `.aider.tags.cache.v3`. Extreme token compression, tree-sitter symbol resolution, and PageRank-weighted symbol relevance.
+
+</td>
+<td width="50%" valign="top">
+
+### [SECURITY.md for AI](https://github.com/)
+
+AI security boundary specification defining sensitive files, API key patterns, forbidden database operations, and environment variable invariants that AI agents must never expose, modify, or log.
+
+**Format & Key Usage:**
+Repository root `/SECURITY.md`. Data loss prevention (DLP), secret containment, database migration boundaries, and zero-trust permission enforcement.
+
+</td>
+</tr>
+</table>
+
+## Starter AGENTS.md Template
+
+> AGENTS.md is an open Markdown file standard placed at the root of a code repository to give AI coding agents project‑specific instructions, conventions, and commands, used by over 60,000 open‑source projects as of 2026.
+
+Consider copying this file into your own codebase as `AGENTS.md`. It is general-purpose and a good starter file.
+
+```md
+# AGENTS.md
+
+## Project Purpose
+
+[Provide a 1-2 sentence description of what this software does so the agent understands the business context. e.g., A multi-tenant web application for managing inventory.]
+
+## Stack & Tech
+
+- **Language:** [e.g., TypeScript / Python 3.10+]
+- **Framework:** [e.g., Next.js / FastAPI / Django]
+- **Database:** [e.g., PostgreSQL with Prisma / MongoDB]
+- **Styling:** [e.g., Tailwind CSS / SCSS]
+
+## Commands
+
+- **Install:** `[e.g., npm install / pip install -r requirements.txt]`
+- **Run dev server:** `[e.g., npm run dev]`
+- **Run tests:** `[e.g., npm test]`
+- **Lint code:** `[e.g., npm run lint]`
+- **Build:** `[e.g., npm run build]`
+
+## Repository Structure
+
+- `src/components/`: Reusable interface components.
+- `src/features/`: Feature-specific UI and application logic.
+- `src/lib/`: Reusable infrastructure and external integrations.
+- `src/services/`: Core business logic and database interactions.
+- `tests/`: Unit and integration test suites.
+
+## Coding Conventions
+
+- Read the surrounding code before writing new code to match the existing style.
+- Use explicit typing for all new functions, variables, and parameters.
+- Prefer functional programming patterns where possible; avoid mutating state unexpectedly.
+- Keep functions small, testable, and focused on a single responsibility.
+- Do not introduce new state-management libraries or major dependencies without explicit permission.
+
+## Architecture Rules
+
+- Keep route handlers/controllers thin; delegate heavy logic to the `services/` layer.
+- Validate all external input at the system boundaries.
+- Never call the database directly from reusable UI components.
+- Reuse existing domain services and helper functions before creating new ones.
+
+## Testing
+
+- Add or update tests for any changed public behavior.
+- Prefer behavior-based assertions over testing private implementation details.
+- Run affected tests to ensure they pass before completing a task.
+- Do not weaken validation, types, or tests just to make a failing test pass.
+
+## Security & Boundaries
+
+- Never log user IDs, access tokens, API keys, passwords, or PII.
+- Enforce resource ownership and authorization on the backend for all protected routes.
+- Use the existing secret-management/environment-variable system.
+- Do not run destructive database migrations without explicit approval.
+
+> **To Agent**: If this `AGENTS.md` file is _not_ filled in yet, consider filling it in yourself as you analyze the codebase.
+```
