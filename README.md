@@ -121,12 +121,12 @@ Upload an image or UI screenshot and ask: "Convert this navbar and dashboard lay
 <tr>
 <td width="50%" valign="top">
 
-### [Code Copilot](https://chatgpt.com/g/g-2DQzUabbq-code-copilot)
+### [OpenAI Canvas (Native)](https://help.openai.com/en/articles/9892604-canvas-faq)
 
-The top-ranked programming assistant in the GPT Store. Specializes in multi-language debugging, performance audits, edge-case analysis, and code refactoring, providing senior-developer code reviews without verbose filler prose.
+OpenAI's native workspace for coding and writing. Instead of generating code in a standard chat bubble, Canvas opens a dedicated side-panel editor where ChatGPT can highlight specific lines, suggest inline edits, add logs, and refactor functions in real-time.
 
 **How to use:**
-Mention `@Code Copilot` in ChatGPT or launch directly from the store. Paste your snippet or stack trace and ask: "Analyze this function for memory leaks and concurrency pitfalls".
+Select the "GPT-4o with Canvas" model in ChatGPT. Prompt it to write a script or component, and a collaborative code editor will automatically open on the right half of your screen.
 
 </td>
 <td width="50%" valign="top">
@@ -232,7 +232,7 @@ Ask Consensus: "What does the research say about developer productivity gains wi
 <tr>
 <td width="50%" valign="top">
 
-### [Wolfram](https://chatgpt.com/g/g-0S5FXStqS-wolfram)
+### [Wolfram](https://openai.com/business/plugins/wolfram/)
 
 Connects ChatGPT to the Wolfram|Alpha computational engine and Wolfram Language for exact symbolic mathematics, discrete math, differential equations, physics simulations, and scientific graphing.
 
