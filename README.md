@@ -3016,6 +3016,6 @@ If you found these templates and ecosystem maps helpful, please consider **starr
 
 If you found this repository helpful, check out these related lists:
 
-- [Awesome OpenAI](https://github.com/alifirooz/awesome-openai) - A curated list of awesome OpenAI API resources, libraries, and tools.
+- [Awesome OpenAI](https://github.com/Jaykef/awesome-openAI) - A curated list of awesome OpenAI API resources, libraries, and tools.
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) - A repository that includes ChatGPT prompt curation to use ChatGPT better.
 - [Awesome](https://github.com/sindresorhus/awesome) - The overarching curated list of awesome lists.
