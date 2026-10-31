@@ -43,6 +43,11 @@ This repo is a collection of useful tools for people needing templates, plugins,
     - [Terminal Coding Agents & CLI Workflows](#terminal-coding-agents--cli-workflows)
     - [Enterprise Code Intelligence & Code Graph Assistants](#enterprise-code-intelligence--code-graph-assistants)
   - [Model Context Protocol (MCP) Servers](#model-context-protocol-mcp-servers)
+    - [Core Developer, Version Control & Local Workspaces](#core-developer-version-control--local-workspaces)
+    - [Databases, Data Warehouses & Cache](#databases-data-warehouses--cache)
+    - [Web Browsing, Search & Content Extraction](#web-browsing-search--content-extraction)
+    - [DevOps, Cloud Infrastructure & Observability](#devops-cloud-infrastructure--observability)
+    - [Team Collaboration, Project Management & Docs](#team-collaboration-project-management--docs)
 
 ---
 
@@ -2166,6 +2171,357 @@ Codebase knowledge graphs, custom agent creation, automated regression testing, 
 
 ## Model Context Protocol (MCP) Servers
 
-- [**GitHub MCP**](https://github.com/mcp): The official server enabling agents to triage issues, draft pull requests, and monitor CI workflows directly.
-- [**Filesystem MCP**](https://mcpservers.org/servers/modelcontextprotocol/filesystem): The standard protocol server that provides agents with strictly scoped, secure read/write access to local project directories.
-- [**Playwright MCP**](https://playwright.dev/): Allows agents to drive real browsers through structured accessibility snapshots for automated UI verification.
+### Core Developer, Version Control & Local Workspaces
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [GitHub MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/github)
+
+The official GitHub MCP server enabling agents to search repositories, inspect file contents, analyze pull requests, review commits, create issues, and manage GitHub Actions CI workflows.
+
+**Key Capabilities:**
+Repository search, pull request creation/reviews, issue triage, branch management, and GitHub Actions monitoring.
+
+</td>
+<td width="50%" valign="top">
+
+### [Filesystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)
+
+The reference Model Context Protocol server that provides AI agents with strictly scoped, secure read, write, move, and search access across local project directories with sandboxed directory path boundaries.
+
+**Key Capabilities:**
+Scoped directory access, recursive file search, fast text/binary reads, write approvals, and file tree inspection.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Git MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/git)
+
+Direct MCP tool integration for local git repositories. Enables agents to inspect commit histories, read uncommitted working tree diffs, stage files, switch branches, and view git blame annotations.
+
+**Key Capabilities:**
+Local commit inspection, diff generation, branch switching, status checks, and staging operations.
+
+</td>
+<td width="50%" valign="top">
+
+### [GitLab MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/gitlab)
+
+Full enterprise GitLab integration for MCP. Allows AI assistants to inspect merge requests, triage issues, trigger and monitor CI/CD pipelines, and interact with GitLab repository branches via the REST API.
+
+**Key Capabilities:**
+Merge request reviews, pipeline status tracking, issue management, project repository browsing, and API access.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Memory MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/memory)
+
+A graph-based persistent memory server for agents. Uses a knowledge graph structure to persist entities, relations, observations, and user preferences across distinct coding sessions without context loss.
+
+**Key Capabilities:**
+Persistent knowledge graph storage, entity creation, relationship linking, contextual recall, and session persistence.
+
+</td>
+<td width="50%" valign="top">
+
+### [Terminal / Bash MCP](https://github.com/modelcontextprotocol/servers)
+
+A secure shell execution server that provides agents with controlled, configurable terminal access for running build tools, test suites, package managers, and formatters with captured stdout and stderr.
+
+**Key Capabilities:**
+Command execution, build tool automation, test suite verification, background process management, and output capture.
+
+</td>
+</tr>
+</table>
+
+### Databases, Data Warehouses & Cache
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [PostgreSQL MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres)
+
+The official PostgreSQL server providing read-only or read-write database connectivity. Allows agents to discover schemas, inspect table structures, analyze indexes, explain query plans, and execute analytical SQL queries.
+
+**Key Capabilities:**
+Schema discovery, SQL query execution, EXPLAIN query plan analysis, table column introspection, and index tuning.
+
+</td>
+<td width="50%" valign="top">
+
+### [SQLite MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite)
+
+Lightweight, zero-config local database connector allowing agents to query tables, inspect schemas, parse relationships, and run analytical queries over local `.sqlite` or `.db` files.
+
+**Key Capabilities:**
+Local database querying, schema introspection, automated SQL generation, and embedded analytics.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Redis MCP](https://github.com/redis/mcp-redis)
+
+Official Redis integration for MCP. Provides agents with real-time access to key-value stores, allowing key inspection, data type queries (strings, hashes, lists, sets, streams), cache TTL verification, and pub/sub monitoring.
+
+**Key Capabilities:**
+Cache key inspection, key TTL management, data structure querying, pub/sub testing, and cache optimization.
+
+</td>
+<td width="50%" valign="top">
+
+### [BigQuery MCP](https://github.com/google-cloud/bigquery-mcp-server)
+
+Direct Google Cloud BigQuery connector exposing enterprise data warehouse datasets. Enables schema discovery, query generation, dry-run cost estimation, and large-scale data analytics over standard SQL.
+
+**Key Capabilities:**
+Data warehouse schema inspection, cost estimation dry-runs, SQL query execution, and analytical dataset synthesis.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Snowflake MCP](https://github.com/Snowflake-Labs/mcp-server-snowflake)
+
+Official Snowflake MCP server for enterprise cloud data platforms. Enables agents to discover database schemas, inspect table schemas, execute SQL queries, and manage data governance pipelines.
+
+**Key Capabilities:**
+Data warehouse exploration, analytical SQL querying, role-based access management, and dataset discovery.
+
+</td>
+<td width="50%" valign="top">
+
+### [Qdrant Vector MCP](https://github.com/qdrant/mcp-server-qdrant)
+
+Vector search engine MCP server that gives agents semantic retrieval capabilities over embedding databases. Enables similarity searches, document clustering, and retrieval-augmented generation (RAG) over vector collections.
+
+**Key Capabilities:**
+Vector similarity search, payload filtering, collection management, and semantic document grounding.
+
+</td>
+</tr>
+</table>
+
+### Web Browsing, Search & Content Extraction
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Playwright MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/playwright)
+
+Official browser automation server allowing agents to drive real Chromium, Firefox, and WebKit browsers. Executes clicks, form submissions, navigation, console log capturing, and structured accessibility snapshot inspections.
+
+**Key Capabilities:**
+End-to-end browser automation, accessibility tree snapshots, form interactions, visual screenshot capture, and UI testing.
+
+</td>
+<td width="50%" valign="top">
+
+### [Puppeteer MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer)
+
+Headless Chrome automation tool enabling agents to navigate web pages, execute client-side JavaScript, capture full-page screenshots, generate PDFs, and scrape dynamic client-rendered web content.
+
+**Key Capabilities:**
+Headless Chrome execution, client-side JS evaluation, screenshot/PDF rendering, and dynamic DOM extraction.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Firecrawl MCP](https://github.com/mendableai/firecrawl-mcp-server)
+
+Direct MCP bridge to the Firecrawl engine. Crawls complex, dynamic websites, bypasses anti-bot obstacles, and returns clean, LLM-ready markdown optimized for developer agent ingestion.
+
+**Key Capabilities:**
+Deep subpage web crawling, JavaScript-rendered scraping, clean markdown conversion, and anti-bot mitigation.
+
+</td>
+<td width="50%" valign="top">
+
+### [Brave Search MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search)
+
+Official web search and local business intelligence connector powered by Brave's independent, privacy-focused search index. Provides fresh web search results, news queries, and URL discovery.
+
+**Key Capabilities:**
+Independent web search indexing, real-time news retrieval, localized business queries, and clean link extraction.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Tavily MCP](https://github.com/tavily-ai/tavily-mcp)
+
+An AI-native search engine designed specifically for LLMs and autonomous research agents. Delivers hallucination-resistant, factually grounded web search summaries with direct source citations.
+
+**Key Capabilities:**
+Autonomous research search, factual source grounding, concise answer extraction, and developer API search.
+
+</td>
+<td width="50%" valign="top">
+
+### [Fetch MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch)
+
+A lightweight, efficient HTTP resource fetcher that downloads web pages, parses raw HTML, strips boilerplate headers and scripts, and converts content into clean, readable markdown for agent reasoning.
+
+**Key Capabilities:**
+Fast URL fetching, HTML-to-Markdown conversion, boilerplate stripping, and structured content extraction.
+
+</td>
+</tr>
+</table>
+
+### DevOps, Cloud Infrastructure & Observability
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Docker MCP](https://github.com/ckreiling/mcp-server-docker)
+
+Comprehensive Docker engine management server. Enables agents to inspect running containers, view container logs, start/stop services, build images from Dockerfiles, and audit network configurations.
+
+**Key Capabilities:**
+Container lifecycle management, real-time log streaming, image inspection, and Docker Compose orchestration.
+
+</td>
+<td width="50%" valign="top">
+
+### [Kubernetes MCP](https://github.com/strowk/mcp-k8s)
+
+Direct cluster management server for Kubernetes environments. Empowers agents to query pods, inspect deployment manifests, stream container logs, review cluster events, and debug infrastructure failures.
+
+**Key Capabilities:**
+Pod inspection, log streaming, deployment status checks, namespace management, and cluster event auditing.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Sentry MCP](https://github.com/getsentry/sentry-mcp)
+
+Official Sentry integration for real-time application monitoring. Allows agents to query production issues, examine stack traces, inspect error breadcrumbs, analyze release regressions, and suggest code fixes.
+
+**Key Capabilities:**
+Production issue triage, stack trace analysis, error tag filtering, release tracking, and automated patch suggestions.
+
+</td>
+<td width="50%" valign="top">
+
+### [Google Cloud MCP](https://github.com/google-cloud/cloud-mcp)
+
+Official infrastructure management and observability server for Google Cloud Platform. Enables agents to inspect Cloud Run logs, check Cloud Monitoring metrics, view compute instances, and audit IAM permissions.
+
+**Key Capabilities:**
+Cloud Run log analysis, Cloud Monitoring metrics, compute resource inspection, and GCP IAM diagnostics.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [AWS MCP](https://github.com/awslabs/mcp-server-aws)
+
+Official AWS resource management MCP server. Allows agents to query CloudWatch logs, inspect S3 buckets, check Lambda function executions, review ECS clusters, and diagnose cloud infrastructure configurations.
+
+**Key Capabilities:**
+CloudWatch log querying, S3 object inspection, Lambda function monitoring, and AWS resource management.
+
+</td>
+<td width="50%" valign="top">
+
+### [Cloudflare MCP](https://github.com/cloudflare/mcp-server-cloudflare)
+
+Official Cloudflare server for edge infrastructure management. Enables agents to inspect and update DNS records, deploy Workers, manage KV namespaces, and execute queries against D1 SQL databases.
+
+**Key Capabilities:**
+DNS record management, Cloudflare Workers deployment, KV store operations, and D1 database queries.
+
+</td>
+</tr>
+</table>
+
+### Team Collaboration, Project Management & Docs
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Slack MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/slack)
+
+Official Slack integration for team communication. Allows AI agents to read public channels, search team chat histories, post status updates, create messages, and summarize threaded technical discussions.
+
+**Key Capabilities:**
+Channel message reading, conversational thread summarization, broadcast updates, and team collaboration.
+
+</td>
+<td width="50%" valign="top">
+
+### [Linear MCP](https://github.com/jerhadf/linear-mcp-server)
+
+High-speed project and issue tracking tool for engineering teams. Enables agents to search issues, create tickets, update project roadmaps, assign cycles, and manage sprint backlogs on Linear.
+
+**Key Capabilities:**
+Issue creation/updating, sprint cycle management, team roadmap tracking, and workflow automation.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Atlassian Jira & Confluence MCP](https://github.com/atlassian/mcp-atlassian)
+
+Official Atlassian integration connecting agents directly to Jira and Confluence. Enables agents to search enterprise project tickets, update sprint boards, and read/write engineering documentation.
+
+**Key Capabilities:**
+Jira issue tracking, sprint board updates, Confluence page search, and technical documentation drafting.
+
+</td>
+<td width="50%" valign="top">
+
+### [Notion MCP](https://github.com/suekou/mcp-notion-server)
+
+Direct Notion workspace integration. Allows agents to query databases, search workspace pages, read and append rich text blocks, and extract product requirements and specifications directly into code.
+
+**Key Capabilities:**
+Workspace database search, page block reading/writing, rich text formatting, and spec extraction.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Google Drive & Workspace MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive)
+
+Official Google Drive integration for MCP. Enables agents to search files across corporate Drives, extract text from PDFs, read Google Docs and Sheets, and synthesize cross-document insights.
+
+**Key Capabilities:**
+Drive file search, Google Docs/Sheets ingestion, PDF text extraction, and enterprise document grounding.
+
+</td>
+<td width="50%" valign="top">
+
+### [Figma MCP](https://github.com/modelcontextprotocol/servers)
+
+Design context integration allowing agents to inspect Figma design files, extract component trees, retrieve color/typography tokens, and translate visual layouts into production frontend code.
+
+**Key Capabilities:**
+Design token extraction, component hierarchy inspection, visual layout translation, and design-to-code pipelines.
+
+</td>
+</tr>
+</table>
