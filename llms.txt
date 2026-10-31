@@ -1,20 +1,22 @@
-# [Project or Brand Name]
+# Agent Cookbook
 
-> [One or two sentences summarizing exactly what this project is and who it is for. Use neutral, descriptive language—no marketing fluff.]
+> A curated, community-driven repository of templates, plugins, and ecosystem maps for AI agent creation and vibecoding.
 
-[Optional: A brief paragraph of additional context if the project's purpose isn't entirely obvious from the summary, or if there are hard rules an agent must know before proceeding.]
+This repository provides standardized context files (like AGENTS.md), ecosystem directories, and tool registries for developers building multi-agent systems and using AI-native IDEs.
 
-## [Category Name - e.g., Core Documentation]
+## Core Templates
 
-- [Page Title](https://example.com/path): [A concrete, factual description of what the agent will find on this page. If you can include a hard fact (like a price or version number) right here, do it.]
-- [Page Title](https://example.com/path): [Description...]
+- [AGENTS.md Starter Template](https://github.com/Ra4ster/Agent-Cookbook/blob/main/templates/AGENTS.md-template): The standard configuration file to drop into a repository to instruct AI coding assistants on project-specific rules, stack, and boundaries.
+- [Cursor Rules Template](https://github.com/Ra4ster/Agent-Cookbook/blob/main/templates/.cursorrules-template): General-purpose project instructions for Cursor IDE and Composer workflows.
+- [llms.txt Template](https://github.com/Ra4ster/Agent-Cookbook/blob/main/templates/llms.txt-template): Starter markdown index template for exposing documentation to LLMs.
+- [Issue Template for Tool Submissions](https://github.com/Ra4ster/Agent-Cookbook/blob/main/.github/ISSUE_TEMPLATE/submit_tool.md): The required YAML format for submitting a new MCP server or agent framework to the cookbook.
 
-## [Category Name - e.g., Key Features / Products]
+## Ecosystem Directories
 
-- [Page Title](https://example.com/path): [Description...]
-- [Page Title](https://example.com/path): [Description...]
+- [Vibe Coding IDEs](https://github.com/Ra4ster/Agent-Cookbook/blob/main/README.md#vibe-coding-ides--app-builders): A directory of AI-native IDEs (Cursor, Windsurf) and prompt-to-app builders.
+- [Model Context Protocol (MCP) Servers](https://github.com/Ra4ster/Agent-Cookbook/blob/main/README.md#model-context-protocol-mcp-servers): A directory of official and community MCP servers for granting agents local filesystem, database, and browser access.
+- [Core Agent Frameworks](https://github.com/Ra4ster/Agent-Cookbook/blob/main/README.md#core-agent-frameworks): A directory of stateful and code-first orchestrators like LangGraph and CrewAI.
 
 ## Optional
 
-- [External Link or Secondary Page](https://example.com/path): [Description...]
-```
+- [llms.txt Official Specification](https://llmstxt.org/): The official spec for formatting this file.

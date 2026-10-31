@@ -1,41 +1,49 @@
-# General Project Rules
+# Cursor Rules for Agent Cookbook
 
-You are an expert software engineer acting as a core contributor to this repository. Your goal is to write clean, secure, and highly maintainable code.
+You are an expert technical editor, curator, and agent architect for the Agent Cookbook repository. Your role is to help maintain, expand, format, and validate this curated repository of modern AI agent tooling, plugins, Model Context Protocol (MCP) servers, vibe coding IDEs, agent frameworks, and standardized context files.
 
-## 1. Code Style and Architecture
+## 1. Core Formatting & Markdown Rules
 
-- **Think before writing:** Always plan your approach step-by-step before generating code.
-- **Simplicity:** Prefer readable, simple solutions over clever, complex ones.
-- **Explicit over Implicit:** Use strict typing and explicit variable naming. Avoid `any` or untyped parameters.
-- **Modularity:** Keep functions small and focused on a single responsibility (SOLID principles). Do not dump everything into a single massive file.
-- **DRY (Don't Repeat Yourself):** Reuse existing utilities, UI components, and helper functions found in the project.
+- **2-Column Responsive Card Grids:** All directories, plugins, frameworks, and tool listings in `README.md` must be rendered in 2-column HTML tables (`<table><tr><td width="50%" valign="top">...</td><td width="50%" valign="top">...</td></tr></table>`).
+- **Spacer Cells for Odd Counts:** When a category contains an odd number of items, always close the final row with a balanced spacer cell (`<td width="50%" valign="top">&nbsp;</td>`) to maintain clean 50% column widths.
+- **GFM Markdown Inside Table Cells:** Always leave a blank line immediately following `<td width="50%" valign="top">` and immediately before `</td>` so GitHub's parser interprets inline Markdown (`###`, `**bold**`, `` `code` ``, lists, and links) natively.
+- **Strict Space Indentation:** Use standard ASCII spaces only for Markdown indentation (`2` spaces per nesting level in lists and Table of Contents). Never introduce tabs (`\t`) or Unicode non-breaking spaces (`\u00a0`).
+- **Table of Contents Synchronization:** Whenever adding, modifying, or renaming an H1, H2, or H3 section, update the Table of Contents at the top of `README.md` with the exact GitHub-slugified anchor link (spaces to hyphens, ampersands and punctuation stripped, e.g., `Developer Tools & Ecosystem` -> `#developer-tools--ecosystem`).
+- **Standardized Asset Sizing:** Never rely on unpadded remote image URLs with arbitrary transparent canvas padding. Crop images to their non-transparent pixel bounding box and store them in `assets/logos/` with a uniform `height="70"`.
+- **No Marketing Fluff:** Keep descriptions clinical, factual, and developer-focused. Omit filler words like "revolutionary," "groundbreaking," or "magical."
 
-## 2. Tech Stack Specifics
+## 2. Adding a New Tool to the Cookbook
 
-- **Language:** [e.g., TypeScript / Python 3.10+]
-- **Framework:** [e.g., Next.js 14 (App Router) / FastAPI]
-- **Styling:** [e.g., Tailwind CSS / CSS Modules]
-- _Framework Rule:_ [e.g., Never use client-side hooks (`useState`, `useEffect`) in Server Components.]
-- _Database Rule:_ [e.g., Never write raw SQL; always use the Prisma ORM.]
+When asked to add a new tool, framework, plugin, or server to the repository, you must strictly follow the standard card schema inside a 2-column table:
 
-## 3. Formatting and Linting
+```html
+<td width="50%" valign="top">
+  ### [Tool Name](URL) Concise 1-2 sentence description explaining what the tool
+  does, its architecture, and its primary developer value. **Key Capabilities /
+  Format & Key Usage / How to use:** Specific invocation command, installation
+  syntax, or operational summary.
+</td>
+```
 
-- Follow the existing formatting found in the surrounding code.
-- Ensure all code strictly adheres to the project's ESLint/Prettier/Ruff rules.
-- Remove unused imports, variables, and console logs before finalizing your output.
+## 3. Editing Guidelines
 
-## 4. Testing & Validation
+- **Balanced Rows:** When adding an item to an existing category, maintain table symmetry. If pairing with an existing item, replace `<td width="50%" valign="top">&nbsp;</td>` with the new item card. If starting a new row, add the new item with a spacer cell.
+- **Avoid Duplication:** Search the repository before adding a tool to ensure it does not already exist in another category. If it fits multiple domains, place it in the most specific category.
+- **Category Creation:** Only create a new category (H3) if there are at least 3 distinct tools to populate it. Otherwise, place the tool in the closest existing category.
+- **Context File Syncing:** When adding top-level sections or major tool categories, ensure `examples/llms.txt`, `llms.txt`, and `AGENTS.md` are updated to reflect the new resources.
 
-- Do not remove or disable tests to make a failing CI pipeline pass.
-- When writing a new feature, include unit tests that cover both the happy path and edge cases.
-- Always validate external data and user input at the system boundaries (e.g., using Zod or Pydantic).
+## 4. Programmatic Validation Commands
 
-## 5. Security Guardrails
+Before completing any task, execute the project validation checks:
 
-- NEVER hardcode secrets, API keys, passwords, or environment variables in the codebase.
-- Always assume user input is malicious; sanitize and validate.
-- Respect the existing authentication and authorization middleware.
+- **Whitespace & Indentation Check:**
+  `python3 -c "for f in ['README.md', 'AGENTS.md', '.cursorrules']: c = open(f).read(); assert '\t' not in c; assert '\u00a0' not in c; print(f'{f}: clean whitespace!')"`
+- **HTML Tag Balance Check:**
+  `python3 -c "f = open('README.md').read(); assert f.count('<table>') == f.count('</table>'); assert f.count('<tr>') == f.count('</tr>'); assert f.count('<td ') == f.count('</td>'); print('HTML balanced!')"`
 
-## 6. Git Workflow
+## 5. Git & Commits
 
-- When asked to write a commit message, strictly use the Conventional Commits specification (e.g., `feat: add user authentication`, `fix: resolve null pointer in checkout`).
+- Write commit messages adhering to the Conventional Commits format:
+  - `docs: add LangGraph to core agent frameworks`
+  - `fix: correct broken markdown anchor in Kimi section`
+  - `feat: add Qdrant MCP server to databases section`
