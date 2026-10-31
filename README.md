@@ -62,6 +62,8 @@
     - [Starter llms.txt Template](#starter-llmstxt-template)
     - [Starter .cursorrules / .windsurfrules Template](#starter-cursorrules--windsurfrules-template)
     - [Starter ai-plugin.json Template](#starter-ai-pluginjson-template)
+    - [Starter SECURITY.md Template](#starter-securitymd-template)
+- [Thank You & Getting Involved](#-thank-you--getting-involved)
 
 ---
 
@@ -2985,3 +2987,21 @@ We will acknowledge receipt of your vulnerability report within **[48 hours]** a
 
 _Thank you for helping keep the agent ecosystem safe and secure._
 ```
+
+---
+
+## 🌟 Thank You & Getting Involved
+
+Thank you for exploring the **Agent Cookbook**! The AI agent and vibecoding ecosystem is evolving at lightning speed, and this repository relies on developers like you to keep it fresh, accurate, and highly curated.
+
+If you found these templates and ecosystem maps helpful, please consider **starring the repository** ⭐ to help others discover it.
+
+- **Have a tool to add?** We would love to see it. Read our [Contributing Guidelines](CONTRIBUTING.md) to see how to format your submission.
+- **Spotted a broken link?** Let us know by [opening an issue](https://github.com/Ra4ster/Agent-Cookbook/issues) or submitting a quick PR.
+- **Found a security concern?** Please review our [Security Policy](SECURITY.md) for responsible disclosure.
+
+<br/>
+
+<div align="center">
+  <a href="#agent-cookbook"><b>👆 Back to Top</b></a>
+</div>
