@@ -4,6 +4,15 @@ First off, thank you for considering contributing to the Agent Cookbook! This re
 
 Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
 
+## 🔍 Curation Criteria ("How Entries Are Chosen")
+
+Agent Cookbook is a high-signal, developer-first directory. To maintain quality and trust, every submitted tool, plugin, MCP server, and framework is evaluated against the following standards:
+
+1. **Concrete Developer Value:** The entry must solve an actual workflow challenge for AI agent building, MCP tool-calling, or vibe coding (e.g., schema inspection, contextual memory, terminal orchestration). No pure marketing fluff, speculative whitepapers, or placeholder projects.
+2. **Reproducible Commands & Active Maintenance:** Submissions must include verified installation commands, active documentation, and functioning repositories. Stale, archived, or broken packages are deprecated or updated to maintained forks.
+3. **Security & Privacy First:** We strictly reject reverse-engineered token scrapers, tools that hardcode credentials, or unauthorized proxies that violate upstream terms of service.
+4. **Standards Compliant:** We prioritize tools implementing established agent standards, including the Model Context Protocol (MCP), Agent Skills (`SKILL.md`), `AGENTS.md`, `llms.txt`, and OpenAPI manifests (`ai-plugin.json`).
+
 ## 🛠️ How to Add a New Tool or Plugin
 
 To keep the cookbook clean, scannable, and highly useful, all tool additions **must** follow a strict formatting structure.

@@ -64,7 +64,6 @@
     - [Starter llms.txt Template](#starter-llmstxt-template)
     - [Starter SECURITY.md Template](#starter-securitymd-template)
 - [Thank You & Getting Involved](#-thank-you--getting-involved)
-- [Related](#related)
 
 ---
 
@@ -122,6 +121,16 @@ Upload an image or UI screenshot and ask: "Convert this navbar and dashboard lay
 <tr>
 <td width="50%" valign="top">
 
+### [Grimoire](https://grimoire.life/discover)
+
+The premier vibecoding wizard built for rapid prototyping, full-stack scaffolding, and prompt-driven software development. Features custom hotkey commands (`K` for command menu, `P` for project scaffolding, `R` for documentation) to build websites, web apps, and scripts from natural language.
+
+**How to use:**
+Open Grimoire and describe your application idea. Type `K` to view command shortcuts or prompt: "Build an interactive single-page Kanban board with React and Tailwind CSS".
+
+</td>
+<td width="50%" valign="top">
+
 ### [OpenAI Canvas (Native)](https://help.openai.com/en/articles/9892604-canvas-faq)
 
 OpenAI's native workspace for coding and writing. Instead of generating code in a standard chat bubble, Canvas opens a dedicated side-panel editor where ChatGPT can highlight specific lines, suggest inline edits, add logs, and refactor functions in real-time.
@@ -130,6 +139,8 @@ OpenAI's native workspace for coding and writing. Instead of generating code in 
 Select the "GPT-4o with Canvas" model in ChatGPT. Prompt it to write a script or component, and a collaborative code editor will automatically open on the right half of your screen.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### [Product Design](https://openai.com/business/plugins/product-design/)
@@ -150,18 +161,6 @@ Use Product Design in ChatGPT to turn product briefs, research notes, and user j
 3. Put it to work
 
 - Start a new chat in ChatGPT Work or Codex, describe the result you need, and ask it to use plugins.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [Grimoire](https://grimoire.life/discover)
-
-The premier vibecoding wizard built for rapid prototyping, full-stack scaffolding, and prompt-driven software development. Features custom hotkey commands (`K` for command menu, `P` for project scaffolding, `R` for documentation) to build websites, web apps, and scripts from natural language.
-
-**How to use:**
-Open Grimoire and describe your application idea. Type `K` to view command shortcuts or prompt: "Build an interactive single-page Kanban board with React and Tailwind CSS".
 
 </td>
 <td width="50%" valign="top">
@@ -312,7 +311,7 @@ Browse prompt templates at https://prompts.chat and paste the system prompt into
 Browser automation CLI built by Vercel Labs for AI coding agents to navigate web apps, run headless tests, verify layouts, and extract page state.
 
 **How to use:**
-Install via `npm install -g @vercel/agent-browser` or add with `npx skills add vercel-labs/agent-browser --agent claude-code`.
+Install via `npm install -g agent-browser && agent-browser install` or add with `npx skills add vercel-labs/agent-browser --agent claude-code`.
 
 </td>
 <td width="50%" valign="top">
@@ -334,7 +333,7 @@ Install via `npm install -g browser-harness`. Start Chrome with `--remote-debugg
 Official Google Chrome DevTools MCP server enabling Claude Code to click, type, submit forms, capture mobile viewports, inspect console errors, and profile performance traces.
 
 **How to use:**
-Add the MCP server via `claude mcp add chrome-devtools -- npx -y @chromestatus/chrome-devtools-mcp`. Ask Claude: "Open localhost:3000, take a screenshot, and inspect console errors".
+Add the MCP server via `claude mcp add chrome-devtools -- npx -y chrome-devtools-mcp@latest`. Ask Claude: "Open localhost:3000, take a screenshot, and inspect console errors".
 
 </td>
 <td width="50%" valign="top">
@@ -388,12 +387,12 @@ Register via `claude mcp add playwright -- npx -y @executeautomation/playwright-
 </td>
 <td width="50%" valign="top">
 
-### [postgres](https://github.com/modelcontextprotocol/servers)
+### [postgres](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/postgres)
 
 Official PostgreSQL Model Context Protocol server providing read-only database exploration, schema introspection, index checking, and query execution planning (`EXPLAIN ANALYZE`).
 
 **How to use:**
-Register the MCP server via `claude mcp add postgres -- npx -y @modelcontextprotocol/server-postgres postgresql://user:pass@localhost:5432/dbname`. Ask Claude: "Inspect the schema of the users table and explain how to write this migration".
+Register the MCP server via `claude mcp add postgres -- npx -y @modelcontextprotocol/server-postgres postgresql://${DB_USER}:${DB_PASSWORD}@localhost:5432/${DB_NAME}`. Ask Claude: "Inspect the schema of the users table and explain how to write this migration".
 
 </td>
 </tr>
@@ -405,12 +404,12 @@ Register the MCP server via `claude mcp add postgres -- npx -y @modelcontextprot
 Official Sentry MCP server that connects Claude Code directly to production telemetry, allowing Claude to inspect unresolved issues, retrieve full stack traces, analyze breadcrumbs, and formulate fixes.
 
 **How to use:**
-Register with `claude mcp add sentry -- npx -y @sentry/mcp-server` using your Sentry auth token. Prompt Claude: "Look up recent Sentry issues tagged with TypeError in auth service and suggest fixes".
+Register with `claude mcp add sentry -- npx -y @sentry/mcp-server@latest` using your Sentry auth token. Prompt Claude: "Look up recent Sentry issues tagged with TypeError in auth service and suggest fixes".
 
 </td>
 <td width="50%" valign="top">
 
-### [sqlite](https://github.com/modelcontextprotocol/servers)
+### [sqlite](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite)
 
 Official SQLite Model Context Protocol server allowing Claude Code to inspect local database schemas, run exploratory SQL queries, verify data integrity, and test migrations in real time.
 
@@ -449,6 +448,16 @@ Install via `npx skills add multica-ai/andrej-karpathy-skills --agent claude-cod
 <tr>
 <td width="50%" valign="top">
 
+### [anthropics-skills](https://github.com/anthropics/skills)
+
+Anthropic's official public repository for Agent Skills, including standard programming patterns, algorithmic approaches, and baseline file and codebase manipulation skills.
+
+**How to use:**
+Install individual skills or the full bundle via `npx skills add anthropics/skills --agent claude-code`.
+
+</td>
+<td width="50%" valign="top">
+
 ### [claude-md-management](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management)
 
 Official Anthropic tools to maintain and optimize `CLAUDE.md` files. Audits instruction quality, captures session learnings, and keeps project memory synchronized with evolving architectures.
@@ -457,6 +466,8 @@ Official Anthropic tools to maintain and optimize `CLAUDE.md` files. Audits inst
 Install via `/plugin install claude-md-management@claude-plugins-official`. Run `/claude-md update` or `/claude-md audit` to optimize your project rules.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### [code-modernization](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization)
@@ -467,8 +478,6 @@ Official Anthropic modernization plugin for legacy codebases. Extracts business 
 Install via `/plugin install code-modernization@claude-plugins-official`. Run `/modernize` to assess legacy code and formulate an upgrade roadmap.
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### [code-simplifier](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier)
@@ -479,6 +488,8 @@ Official Anthropic agent plugin that simplifies and refines code for clarity, co
 Install via `/plugin install code-simplifier@claude-plugins-official`. Run `/simplify` or prompt Claude: "Review and simplify this module to remove unnecessary abstractions".
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### [commit-commands](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/commit-commands)
@@ -489,8 +500,6 @@ Official Anthropic git workflow plugin providing automated commands for generati
 Install via `/plugin install commit-commands@claude-plugins-official`. Use `/commit` to automatically inspect diffs and generate a clean commit message, or `/push` and `/pr` to manage pull requests.
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### [compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin)
@@ -501,6 +510,8 @@ Official Compound Engineering plugin by Every, operationalizing the cycle of bra
 Install via `/plugin marketplace add EveryInc/compound-engineering-plugin` or `npx skills add EveryInc/compound-engineering-plugin`. Run `/compound` after finishing tasks to persist institutional learnings.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### [feature-dev](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/feature-dev)
@@ -511,8 +522,6 @@ Official Anthropic guided 7-phase feature development plugin. Deploys specialize
 Install via `/plugin install feature-dev@claude-plugins-official`. Launch the interactive workflow with `/feature-dev` or pass a feature prompt: `/feature-dev Add user authentication with OAuth`.
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### [GitNexus](https://github.com/abhigyanpatwari/GitNexus)
@@ -521,6 +530,18 @@ Zero-server code intelligence engine that maps symbols, call chains, dependencie
 
 **How to use:**
 Add the MCP server with `claude mcp add gitnexus -- npx -y gitnexus-mcp`. Ask Claude: "Analyze the blast radius of modifying this auth service".
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [google-skills](https://github.com/google/skills)
+
+Official Google repository of Agent Skills for Google products and technologies, including Google Cloud Platform, Firebase, Android, Web APIs, and Gemini integrations.
+
+**How to use:**
+Install via `npx skills add google/skills --agent claude-code`. Activates when developing on GCP, Firebase, or Google developer platforms.
 
 </td>
 <td width="50%" valign="top">
@@ -537,6 +558,16 @@ Install via `/plugin install hookify@claude-plugins-official`. Use `/hookify` to
 <tr>
 <td width="50%" valign="top">
 
+### [mattpocock-skills](https://github.com/mattpocock/skills)
+
+Skills for Real Engineers straight from Matt Pocock's `.agents` directory, encoding TypeScript best practices, type gymnastics, idiomatic patterns, and clean code hygiene.
+
+**How to use:**
+Install via `npx skills add mattpocock/skills --agent claude-code`. Activates automatically when writing, refactoring, or reviewing TypeScript code.
+
+</td>
+<td width="50%" valign="top">
+
 ### [open-code-review](https://github.com/alibaba/open-code-review)
 
 Alibaba's battle-tested hybrid code review engine combining deterministic Go analysis pipelines with LLM agents to deliver line-level comments on NPE, thread-safety, XSS, and SQL injection.
@@ -545,6 +576,8 @@ Alibaba's battle-tested hybrid code review engine combining deterministic Go ana
 Install via `go install github.com/alibaba/open-code-review/cmd/ocr@latest` or add to Claude Code. Run `ocr review` on a branch diff or pull request.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### [ponytail](https://github.com/DietrichGebert/ponytail)
@@ -555,8 +588,6 @@ Makes your AI agent think like the laziest senior dev in the room. Enforces YAGN
 Install via `npx skills add DietrichGebert/ponytail --agent claude-code` or `/plugin marketplace add DietrichGebert/ponytail`. Adjust intensity with `/ponytail lite`, `/ponytail full`, or `/ponytail ultra`.
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### [pr-review-toolkit](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/pr-review-toolkit)
@@ -567,6 +598,8 @@ Official Anthropic pull request review toolkit featuring specialized review agen
 Install via `/plugin install pr-review-toolkit@claude-plugins-official`. Use commands like `/pr-review` or `/review-pr <pr-url>` to generate thorough, multi-agent code critiques.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### [repomix](https://github.com/yamadashy/repomix)
@@ -575,40 +608,6 @@ Packs your entire repository into a single AI-friendly file with XML tags, token
 
 **How to use:**
 Generate Claude Agent Skills with `npx repomix --skill-generate`, or add the MCP server with `claude mcp add repomix -- npx -y repomix --mcp`.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [skills](https://github.com/mattpocock/skills)
-
-Skills for Real Engineers straight from Matt Pocock's `.agents` directory, encoding TypeScript best practices, type gymnastics, idiomatic patterns, and clean code hygiene.
-
-**How to use:**
-Install via `npx skills add mattpocock/skills --agent claude-code`. Activates automatically when writing, refactoring, or reviewing TypeScript code.
-
-</td>
-<td width="50%" valign="top">
-
-### [skills](https://github.com/anthropics/skills)
-
-Anthropic's official public repository for Agent Skills, including standard programming patterns, algorithmic approaches, and baseline file and codebase manipulation skills.
-
-**How to use:**
-Install individual skills or the full bundle via `npx skills add anthropics/skills --agent claude-code`.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [skills](https://github.com/google/skills)
-
-Official Google repository of Agent Skills for Google products and technologies, including Google Cloud Platform, Firebase, Android, Web APIs, and Gemini integrations.
-
-**How to use:**
-Install via `npx skills add google/skills --agent claude-code`. Activates when developing on GCP, Firebase, or Google developer platforms.
 
 </td>
 <td width="50%" valign="top">
@@ -807,7 +806,7 @@ Install via `npx skills add nextlevelbuilder/ui-ux-pro-max-skill --agent claude-
 </td>
 <td width="50%" valign="top">
 
-### [vercel-react-best-practices](https://claudecowork.im/resources/vercel-react-best-practices)
+### [vercel-react-best-practices](https://github.com/vercel-labs/agent-skills/tree/main/skills/vercel-react-best-practices)
 
 React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.
 
@@ -937,7 +936,7 @@ Install via `/plugin install rust-analyzer-lsp@claude-plugins-official`. Ensure 
 </td>
 <td width="50%" valign="top">
 
-### [rust-analyzer-mcp](https://github.com/rust-lang/rust-analyzer)
+### [rust-analyzer-mcp](https://github.com/zeenix/rust-analyzer-mcp)
 
 Native Rust MCP server bridge for `rust-analyzer`. Feeds Claude Code accurate borrow-checker hints, type inferences, trait implementations, macro expansions, and cargo compilation errors directly from the Rust compiler.
 
@@ -1056,7 +1055,7 @@ Install via `npx skills add VoltAgent/awesome-claude-code-subagents --agent clau
 AI-powered task-management system that breaks high-level PRDs and feature requests into granular, dependency-aware task graphs with status tracking.
 
 **How to use:**
-Install via `npm install -g claude-task-master`. Run `task-master init` and use `task-master next` or MCP tools inside Claude Code.
+Install via `npm install -g task-master-ai` (or add via `claude mcp add task-master-ai -- npx -y task-master-ai@latest`). Run `task-master init` to configure task graphs.
 
 </td>
 <td width="50%" valign="top">
@@ -1137,7 +1136,7 @@ Install via `npm install -g agentmemory`. Start the local background service wit
 A memory upgrade and dependency-aware issue tracker for coding agents backed by Dolt (version-controlled SQL), managing task graphs and concurrent multi-agent updates without merge conflicts.
 
 **How to use:**
-Install via `npm install -g beads-cli` or `pip install beads`. Run `beads init` in your repository and prompt Claude: "Check beads for the next task and update progress".
+Install via `npm install -g @beads/bd` (or `brew install beads`). Run `bd init` in your repository, then `bd setup claude` to enable agent coordination.
 
 </td>
 </tr>
@@ -1494,7 +1493,7 @@ Configure via MCP JSON: `{"command": "npx", "args": ["-y", "@google-cloud/vertex
 <tr>
 <td width="50%" valign="top">
 
-### [Gemini Code Assist for GitHub](https://github.com/marketplace)
+### [Gemini Code Assist for GitHub](https://github.com/apps/gemini-code-assist)
 
 Official GitHub App by Google Cloud providing automated pull request summaries, intelligent semantic code review, test case generation, and conversational code exploration on GitHub repos.
 
@@ -1516,7 +1515,7 @@ Install "Gemini Code Assist" from the VS Code Marketplace or JetBrains Plugins M
 <tr>
 <td width="50%" valign="top">
 
-### [google/skills](https://github.com/google)
+### [google/skills](https://github.com/google/skills)
 
 Official repository of Google Agent Skills formatted as modular `SKILL.md` instructions for Google Cloud Run, Firebase, Android Jetpack Compose, and Vertex AI development workflows.
 
@@ -1544,7 +1543,7 @@ Install globally with `npm install -g @google/gemini-cli`. Export `GEMINI_API_KE
 </td>
 <td width="50%" valign="top">
 
-### [gemini-cli-extensions](https://github.com/google-gemini)
+### [gemini-cli-extensions](https://github.com/google-gemini/gemini-cli)
 
 Extensibility framework for Gemini CLI enabling custom slash commands, contextual project memory (`GEMINI.md`), tool definitions, and modular workflow plugins.
 
@@ -1556,7 +1555,7 @@ Create `.gemini/extensions/` in your repository or global config. Define executa
 <tr>
 <td width="50%" valign="top">
 
-### [gemini-cli-security](https://github.com/google-gemini)
+### [gemini-cli-security](https://github.com/google-gemini/gemini-cli)
 
 Security analysis and vulnerability scanning extension for Gemini CLI. Scans dependencies, detects hardcoded secrets, checks static code patterns against CVE databases, and generates remediation diffs.
 
@@ -1566,7 +1565,7 @@ Run `gemini /security:scan` within any local git repository or configure as a pr
 </td>
 <td width="50%" valign="top">
 
-### [gemini-mcp-bridge](https://github.com/google-gemini)
+### [gemini-mcp-bridge](https://github.com/google-gemini/gemini-cli)
 
 Model Context Protocol bridge and adapter enabling Gemini developer tools and CLI sessions to connect directly to standard stdio and SSE MCP servers (PostgreSQL, SQLite, GitHub, Playwright).
 
@@ -1583,7 +1582,7 @@ Add MCP server configurations into `~/.gemini/mcp.json` or run `gemini mcp add <
 <tr>
 <td width="50%" valign="top">
 
-### [Google Flights & Hotels Extension](https://gemini.google.com)
+### [Google Flights & Hotels Extension](https://support.google.com/gemini/answer/13853874)
 
 Direct access to live flight schedules, pricing comparisons, hotel availability, and itinerary planning powered by Google Travel infrastructure.
 
@@ -1593,7 +1592,7 @@ Reference `@Google Flights` or `@Google Hotels` in your prompt (e.g., `@Google F
 </td>
 <td width="50%" valign="top">
 
-### [Google Maps & Local Intelligence Extension](https://gemini.google.com)
+### [Google Maps & Local Intelligence Extension](https://support.google.com/gemini/answer/13853874)
 
 Integrates Google Maps geospatial data, real-time routing, business information, and location-based discovery directly into Gemini conversational reasoning.
 
@@ -1605,7 +1604,7 @@ Reference `@Google Maps` in your prompt (e.g., `@Google Maps find coffee shops w
 <tr>
 <td width="50%" valign="top">
 
-### [Google Workspace Extension](https://gemini.google.com)
+### [Google Workspace Extension](https://support.google.com/gemini/answer/13686891)
 
 Connects Gemini directly to your Google Workspace account (Gmail, Google Drive, Docs, Sheets, Slides, and Google Calendar). Allows users to summarize email threads, extract actionable items from Drive PDFs/spreadsheets, schedule events, and cross-reference documents directly in chat.
 
@@ -1615,7 +1614,7 @@ Enable the Workspace extension in Gemini Settings (`Extensions` toggle). In your
 </td>
 <td width="50%" valign="top">
 
-### [YouTube Extension](https://gemini.google.com)
+### [YouTube Extension](https://support.google.com/gemini/answer/13853874)
 
 Enables real-time video understanding, chapter breakdown, transcript search, and multi-hour lecture summarization across any public YouTube URL without downloading media files.
 
@@ -1676,17 +1675,17 @@ In Kimi Code, delegate subtasks with `@subagent <task>` or configure specialized
 <tr>
 <td width="50%" valign="top">
 
-### [Kimi-Free-API](https://github.com/xiaoY233/Kimi-Free-API)
+### [Kimi-Free-API (Unofficial)](https://github.com/xiaoY233/Kimi-Free-API)
 
 High-performance reverse-engineered proxy that wraps Kimi AI into a standard OpenAI-compatible API interface (`/v1/chat/completions`), allowing third-party coding agents, Cursor, and IDE extensions to connect to Kimi.
 
 **How to use:**
-Deploy locally via Docker: `docker run -d -p 8000:8000 xiaoy233/kimi-free-api:latest`. Point your IDE's OpenAI Base URL to `http://localhost:8000/v1` and supply your Kimi refresh token.
+Deploy locally via Docker: `docker run -d -p 8000:8000 xiaoy233/kimi-free-api:latest`. Point your IDE's OpenAI Base URL to `http://localhost:8000/v1` and supply your Kimi token. (Note: Unofficial proxy; verify provider terms).
 
 </td>
 <td width="50%" valign="top">
 
-### [kimi-web-search-mcp](https://github.com/MoonshotAI)
+### [kimi-web-search-mcp](https://github.com/MoonshotAI/kimi-code)
 
 Real-time web search and live documentation retrieval tool for Kimi Code, querying fresh web APIs, release notes, and documentation pages with anti-hallucination source verification.
 
@@ -1703,7 +1702,7 @@ Enable in Kimi Code via `/mcp-config add web-search` or configure as a standard 
 <tr>
 <td width="50%" valign="top">
 
-### [kimi-researcher](https://github.com/MoonshotAI)
+### [kimi-researcher](https://github.com/MoonshotAI/Kimi-Researcher)
 
 Deep research and autonomous multi-source information synthesis agent. Ingests dozens of technical documentation pages, academic PDFs, and GitHub readmes to synthesize grounded architecture recommendations.
 
@@ -1713,7 +1712,7 @@ Run via Kimi CLI or API with `kimi research "<technical-topic>" --depth deep`. P
 </td>
 <td width="50%" valign="top">
 
-### [moonshot-mcp-server](https://github.com/MoonshotAI)
+### [moonshot-mcp-server](https://github.com/MoonshotAI/kimi-agent-sdk)
 
 Model Context Protocol server exposing Moonshot Kimi's frontier 2M token context window, file ingestion APIs, and structured JSON generation to any MCP-compliant coding assistant or IDE.
 
@@ -1725,7 +1724,7 @@ Register the MCP server in your configuration: `claude mcp add moonshot -- npx -
 <tr>
 <td width="50%" valign="top">
 
-### [moonshot-python](https://github.com/MoonshotAI)
+### [moonshot-python](https://github.com/MoonshotAI/MoonshotAI-Cookbook)
 
 Official Moonshot AI Python SDK with native streaming, file caching, tool calling, and long-context document analysis utilities optimized for large-scale code synthesis.
 
